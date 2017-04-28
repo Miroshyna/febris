@@ -1,0 +1,206 @@
+html, body {
+    font: 10px 'Roboto', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.container-fluid {
+    max-width: 1600px;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+/*body {
+    margin-bottom: 220px !important;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}*/
+
+
+
+/* COLORS */
+.custom-yellow {
+    background-color: #ede70a;
+}
+
+.custom-yellow-text {
+    color: #ede70a;
+}
+
+.custom-light-yellow {
+    background-color: #fcfcef;
+}
+
+/* HELPERS */
+
+.no-pad {
+    padding: 0 !important;
+}
+
+.columns-one-height {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.columns-one-height > div {
+    display: table-cell;
+    vertical-align: top;
+    width: auto;
+    box-sizing: border-box;
+}
+
+/* Buttons */
+
+.custom-yellow-btn {
+    border-radius: 6px;
+    background-color: #ede70a;
+    color: #1a1a1a;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 15px 25px;
+}
+
+.custom-yellow-btn:hover,
+.custom-yellow-btn:focus {
+    background: #edd609;
+}
+
+/* Modals */
+
+.modal {
+    overflow: auto;
+}
+
+.modal-dialog.login {
+    max-width: 440px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-content {
+    border: 10px solid #d1d8de;
+    background-color: #ffffff;
+    border-radius: 0;
+    padding: 20px;
+}
+
+.login .modal-content {
+    border: 0;
+    border-radius: 6px;
+}
+
+button.close {
+    margin-right: 3px;
+    margin-top: 0;
+    color: #000 !important;
+    opacity: 1;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 0;
+}
+
+form.login-form .row {
+    margin-top: 30px;
+}
+
+.login-form .checkbox label, .radio label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #656565;
+    font-size: 1.3rem;
+}
+
+.login-form .checkbox input[type=checkbox] {
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 2px;
+    background: #fff!important;
+    background-image: none !important;
+}
+
+.login-form a.forgot-password {
+    color: #656565;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-decoration: underline;
+    display: block;
+    margin-top: 10px;
+}
+
+.login-form a.forgot-password:hover,
+.login-form a.forgot-password:focus {
+    color: #656565;
+    text-decoration: none;
+}
+
+/* FORMS */
+
+body form .form-control:focus {
+    border: 1px solid #ede70a;
+    background-color: #fcfbef;
+    box-shadow: none;
+}
+
+.form-control {
+    box-shadow: none;
+    height: 54px;
+    color: #2b2b2b;
+    border-radius: 6px;
+    border: 1px solid #e2e2e2;
+}
+
+
+/* checkbox custom */
+
+.checkbox {
+    display: none;
+}
+
+.checkbox-custom {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid #e2e2e2;
+    top: -1px;
+}
+
+.checkbox-custom,
+.label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom::before {
+    content: "\2713";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 3px;
+    border-radius: 2px;
+}
+
+label span.label {
+    color: #656565;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 5px;
+}

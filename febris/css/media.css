@@ -1,0 +1,389 @@
+/*******************************************************************************
+              1920 +
+********************************************************************************/
+
+@media (min-width: 1920px) {
+    html, body {
+        font: 12px 'Roboto', sans-serif;
+    }
+
+    .main-header a.cart {
+        margin-left: 30px;
+    }
+
+    .main-header ul.dropdown-menu {
+        left: 0;
+        width: 310px;
+    }
+}
+
+
+/*******************************************************************************
+              860 -
+********************************************************************************/
+
+@media (max-width: 860px) {
+    header .sub-header a {
+        font-size: 1.1rem;
+    }
+}
+
+/*******************************************************************************
+              825 -
+********************************************************************************/
+
+@media (max-width: 860px) {
+    .homepage-slider h2 {
+        font-size: 4rem;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*******************************************************************************
+              770 -
+********************************************************************************/
+
+@media (max-width: 770px) {
+
+    ul.contact-info.nav.navbar-nav>li {
+        display: inline-block !important;
+    }
+
+    .hidden-xs,
+    ul.contact-info.nav.navbar-nav>li.hidden-xs {
+        display: none !important;
+    }
+
+    header .sub-header a,
+    header .sub-header a.first-link {
+        padding: 2px 12px;
+        font-size: 1.2rem;
+    }
+
+    .col-xs-12 {
+        position: relative;
+    }
+
+    .sub-header li.email {
+        position: absolute;
+        right: 0;
+    }
+
+
+    .main-header .col-xs-4.text-right {
+        text-align: left !important;
+        position: relative;
+    }
+
+    .main-header a.cart {
+        margin-top: 15px;
+        margin-right: 20px;
+        margin-left: 0;
+        top: 0;
+    }
+
+    a.menu.visible-xs-inline-block {
+        position: absolute;
+        right: 15px;
+        top: 12px;
+        font-size: 3rem;
+        color: #000;
+    }
+
+    .visible-xs-inline-block {
+        display: inline-block !important;
+    }
+
+    .visible-xs-block {
+        display: block !important;
+    }
+
+    a.search-mobile.visible-xs-inline-block {
+        width: 100%;
+        height: 34px;
+        font-size: 3rem;
+        color: #000;
+        padding-top: 8px;
+    }
+
+    .form-group.has-feedback.center-block {
+        margin: 40px auto;
+    }
+
+    footer p.address {
+        margin-bottom: 10px;
+        margin-top: 35px;
+    }
+
+    footer .how-to-get {
+        margin-bottom: 40px;
+    }
+
+    a.logo-footer {
+        margin-top: 30px;
+    }
+
+    .menu-mobile ul li {
+        list-style-type: none;
+    }
+
+    .menu-mobile ul li a {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 40px;
+        color: #2b2b2b;
+    }
+
+    ul.cabinet-links {
+        margin-bottom: 30px;
+    }
+
+    ul.cabinet-links li a {
+        color: #2b2b2b;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 45px;
+    }
+
+    .cabinet-links a.last-link {
+        border-bottom: 2px solid #ede70a;
+        padding-bottom: 26px;
+    }
+
+    .menu-mobile li.lang-switch a {
+        padding: 0;
+    }
+
+    .menu-mobile .lang-switch a {
+        color: #c6c6c6;
+    }
+
+   .menu-mobile .lang-switch a.active {
+        color: #2b2b2b;
+    }
+
+    .menu-mobile li.lang-switch:hover,
+    .menu-mobile .lang-switch a:hover,
+    .menu-mobile li.lang-switch:focus,
+    .menu-mobile .lang-switch a:focus {
+        color: #edd609;
+    }
+
+    .login button.btn.custom-yellow-btn.visible-xs-block {
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+
+    .homepage-slider .caption {
+        padding: 25px 15px;
+        position: relative;
+    }
+
+    .homepage-slider .new {
+        margin-top: 0;
+    }
+
+    .homepage-slider h2 {
+        margin-bottom: 0;
+    }
+
+    .homepage-slider a.more {
+        position: absolute;
+        bottom: -55px;
+        z-index: 99;
+    }
+
+    .catalog-mobile .modal-content {
+        padding: 60px 0;
+    }
+
+    .catalog-mobile ul li {
+        list-style-type: none;
+        text-align: left;
+    }
+
+    .catalog-mobile ul li a {
+        color: #2b2b2b;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 35px;
+    }
+
+    .catalog-mobile ul li.catalog-header {
+        padding-bottom: 20px;
+        margin-bottom: 25px;
+    }
+
+    .catalog-mobile button.close {
+        margin-right: 20px;
+        margin-top: -30px;
+    }
+
+    .catalog-mobile ul li.catalog-header span {
+        color: #1a1a1a;
+        font-size: 20px;
+        font-weight: 400;
+        border-bottom: 2px solid #ede70a;
+        padding-bottom: 25px;
+    }
+
+    .login .modal-content {
+        border: 10px solid #d1d8de;
+        background-color: #ffffff;
+        border-radius: 0;
+        padding: 20px 10px;
+    }
+
+    .login-form label {
+        color: #2b2b2b;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 5px 0 7px 0;
+    }
+
+    .registration-form button {
+        margin-top: 7px;
+    }
+
+    .checkbox:checked + .checkbox-custom::before {
+        top: -3px;
+        right: 0;
+        bottom: 0;
+        left: 2px;
+        font-size: 1.2rem;
+    }
+
+    .main-header button.catalog {
+        position: relative;
+        z-index: 99;
+    }
+}
+
+/*******************************************************************************
+              500 -
+********************************************************************************/
+
+@media (max-width: 500px) {
+
+    html, body {
+        font: 8px 'Roboto', sans-serif;
+    }
+
+    .main-header button.catalog {
+        width: 95px;
+        height: 45px;
+    }
+
+    .main-header .navbar-brand>img {
+        width: 45px;
+    }
+
+    a.search-mobile.visible-xs-inline-block {
+        width: 80%;
+        padding-top: 14px;
+        text-align: right;
+    }
+
+    .main-header a.cart {
+        margin-top: 15px;
+        margin-right: 0;
+        margin-left: 10px;
+        top: 0;
+    }
+
+    .carousel-indicators {
+        bottom: 5px;
+        left: 0;
+        margin-left: 15px;
+        width: auto;
+    }
+
+    .catalog .row {
+        border-bottom: 0;
+    }
+
+    .catalog .col-sm-4.col-xs-4 {
+        width: 100%;
+        display: block;
+    }
+
+    .catalog .item {
+        text-align: left;
+        padding: 20px 0;
+    }
+
+    .catalog .item img {
+        width: 70px;
+        margin: 0 20px 20px 0;
+        float: left;
+    }
+
+    .catalog .item p {
+        margin: 15px 0;
+        min-height: 40px;
+        height: 100%;
+        text-align: left;
+    }
+
+    .row.last .col-xs-4.col-xs-offset-4 {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+
+    footer a {
+        font-size: 14px;
+    }
+
+    .checkbox:checked + .checkbox-custom::before {
+        top: -1px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        font-size: 1.2rem;
+        width: 15px;
+        text-align: center;
+    }
+}
+
+/*******************************************************************************
+              400 -
+********************************************************************************/
+
+@media (max-width: 400px) {
+    a.search-mobile.visible-xs-inline-block {
+        width: 100%;
+        margin-right: -15px;
+    }
+
+    .main-header button.catalog {
+        margin-left: 8px;
+    }
+}
+
+/*******************************************************************************
+              350 -
+********************************************************************************/
+
+@media (max-width: 350px) {
+
+    .main-header button.catalog {
+        margin-left: 10px;
+    }
+
+
+    a.search-mobile.visible-xs-inline-block {
+        width: 110%;
+        font-size: 2.5rem;
+        padding-top: 16px;
+    }
+
+    .homepage-slider h2 {
+        font-size: 3.7rem;
+    }
+
+    .homepage-slider a.more {
+        bottom: -35px;
+    }
+}
