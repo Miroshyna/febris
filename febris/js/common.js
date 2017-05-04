@@ -1,15 +1,22 @@
 /**
- * Created by mac on 27.04.2017.
+ * Created by mac on 29.04.2017.
  */
 
-$(document).ready(function(){
-    $('.row').each(function(){
-        var highestBox = 0;
-        $('.column-one-height ', this).each(function(){
-            if($(this).height() > highestBox) {
-                highestBox = $(this).height();
-            }
+(function ($) {
+    $(document).ready(function() {
+        $('.minus').click(function () {
+            var $input = $(this).parent().find('input');
+            var count = parseInt($input.val()) - 1;
+            count = count < 0 ? 0 : count;
+            $input.val(count);
+            $input.change();
+            return false;
         });
-        $('.column-one-height ',this).height(highestBox);
+        $('.plus').click(function () {
+            var $input = $(this).parent().find('input');
+            $input.val(parseInt($input.val()) + 1);
+            $input.change();
+            return false;
+        });
     });
-});
+})(jQuery);
