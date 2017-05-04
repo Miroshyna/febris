@@ -1,3 +1,5 @@
+
+
 /*******************************************************************************
               1920 +
 ********************************************************************************/
@@ -7,25 +9,286 @@
         font: 12px 'Roboto', sans-serif;
     }
 
-    .main-header a.cart {
-        margin-left: 30px;
+    .main-header ul.dropdown-menu {
+        width: 420px;
+        right: 0;
     }
 
+    span.glyphicon.glyphicon-menu-down.for-select {
+        top: 57px;
+        right: 21px;
+        font-size: 15px;
+        padding: 0 10px 0 0;
+    }
+
+}
+
+
+
+/*******************************************************************************
+              1920-
+********************************************************************************/
+
+@media (max-width: 1920px) {
     .main-header ul.dropdown-menu {
-        left: 0;
-        width: 310px;
+        width: 420px;
+    }
+
+}
+
+
+
+/*******************************************************************************
+              1500-
+********************************************************************************/
+
+@media (max-width: 1500px) {
+    .main-header ul.dropdown-menu {
+        width: 370px;
+    }
+
+}
+
+
+/*******************************************************************************
+              1300 +
+********************************************************************************/
+
+@media (max-width: 1300px) {
+    .main-header ul.dropdown-menu {
+        width: 320px;
+        top: -2px;
+        right: -30px;
+        left: auto;
     }
 }
 
+/*******************************************************************************
+              1200 +
+********************************************************************************/
+
+@media (max-width: 1200px) {
+    .main-header ul.dropdown-menu {
+        width: 290px;
+    }
+}
+
+
+
+/*******************************************************************************
+              1100 -
+********************************************************************************/
+
+@media (max-width: 1100px) {
+    .main-header ul.dropdown-menu {
+        width: 290px;
+        right: -40px;
+        left: auto;
+    }
+}
+
+
+/*******************************************************************************
+              1024 -
+********************************************************************************/
+
+@media (max-width: 1030px) {
+
+    .main-header ul.dropdown-menu {
+        width: 290px;
+        right: auto;
+        left: 120px;
+    }
+
+    .main-header a.cart{
+        margin-left: 10px;
+    }
+
+    span.glyphicon.glyphicon-menu-down.for-select {
+        top: 56px;
+        right: 21px;
+        font-size: 12px;
+        padding: 0 10px 0 0;
+    }
+
+
+    .divider-vertical {
+        right: 15px;
+    }
+}
+
+
+/*******************************************************************************
+              990 -
+********************************************************************************/
+
+@media (max-width: 990px) {
+    section,
+    footer {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    a.navbar-brand {
+        margin-right: 20px;
+    }
+
+    .main-header ul.dropdown-menu {
+        left: 70px;
+    }
+
+    .profile .table>tbody>tr>td, .profile .table>tbody>tr>td a {
+        font-size: 11px;
+    }
+}
 
 /*******************************************************************************
               860 -
 ********************************************************************************/
 
 @media (max-width: 860px) {
+
+    body {
+        margin-bottom: 0 !important;
+    }
+
+    footer {
+        padding: 39px 0 10px 0;
+        min-height: 220px;
+        position: relative;
+        height: 100%;
+    }
+
     header .sub-header a {
         font-size: 1.1rem;
     }
+
+    header .sub-header a {
+        padding: 10px 8px;
+    }
+
+
+    section.profile {
+        padding-bottom: 40px;
+    }
+
+    .profile h2 {
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .profile li.no-link {
+        width: 100%;
+    }
+
+    .profile .nav-pills>li {
+        margin-right: 25px;
+    }
+
+    .profile .nav-pills>li>a,
+    .profile .nav-pills>li.active>a,
+    .profile .nav>li>a:focus,
+    .profile .nav>li>a:hover {
+        border-radius: 3px;
+        font-size: 13px !important;
+        padding: 5px 11px !important;
+    }
+
+    .client-info {
+        margin: 24px 0;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+    .client-info p {
+        color: #1a1a1a;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.4;
+    }
+
+    p.status {
+        color: #656565;
+        font-weight: 400;
+        border: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .client-info a:hover,
+    .client-info a:focus {
+        text-decoration: none;
+        opacity: 0.7;
+    }
+
+    .status-links a:hover,
+    .status-links a:focus {
+        text-decoration: underline;
+    }
+
+    .well.status-links {
+        background-color: #eef4f8;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 20px 20px 10px 20px;
+        margin-bottom: 0;
+    }
+
+    .status-links a {
+        display: block;
+        color: #1a1a1a;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+
+    .two-btn .col-sm-6.col-xs-5.text-right {
+        text-align: left !important;
+        padding-left: 10px;
+    }
+
+    .custom-yellow-btn {
+        font-size: 15px;
+    }
+
+    .profile-content.with-form {
+        padding: 0;
+    }
+
+    .registration-page .form-horizontal .control-label {
+        margin-bottom: 15px;
+    }
+
+    .profile-content.with-form h4 {
+        margin: 40px 0 10px 0;
+    }
+
+    .profile-content.with-form {
+        padding: 0;
+    }
+
+    .page-wrap {
+        margin-bottom: -525px;
+    }
+
+    .sticky-footer, .page-wrap:after {
+        height: 525px;
+    }
+
+    form.login-form.registration-form {
+        margin-top: -15px;
+    }
+
+    .form-price p.price {
+        font-size: 15px;
+    }
+
+    .product-description h6,
+    .product-description p {
+        font-size: 13px;
+    }
+
 }
 
 /*******************************************************************************
@@ -37,6 +300,8 @@
         font-size: 4rem;
         margin-bottom: 10px;
     }
+
+
 }
 
 
@@ -45,6 +310,15 @@
 ********************************************************************************/
 
 @media (max-width: 770px) {
+    body {
+        padding: 0 !important;
+    }
+
+    section,
+    footer {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
 
     ul.contact-info.nav.navbar-nav>li {
         display: inline-block !important;
@@ -65,46 +339,79 @@
         position: relative;
     }
 
-    .sub-header li.email {
-        position: absolute;
-        right: 0;
-    }
-
-
-    .main-header .col-xs-4.text-right {
-        text-align: left !important;
-        position: relative;
-    }
-
-    .main-header a.cart {
-        margin-top: 15px;
-        margin-right: 20px;
-        margin-left: 0;
+    .navbar-brand>img {
         top: 0;
     }
 
-    a.menu.visible-xs-inline-block {
+    .sub-header li.email {
         position: absolute;
-        right: 15px;
-        top: 12px;
+        right: 0;
+        top: 0;
+    }
+
+
+    .main-header .col-xs-5.text-right {
+        position: relative;
+    }
+
+    .col-sm-4.col-xs-5.text-right a {
+        display: inline-block;
+        margin-left: 16px;
+        vertical-align: bottom;
+    }
+
+    .col-sm-4.col-xs-5.text-right .modal-content a {
+        margin-left: 0;
+    }
+
+    .main-header a.search-mobile.visible-xs-inline {
+        margin-left: 0;
+    }
+
+    .main-header a.cart {
+
+        position: relative;
+        top: 1px
+    }
+
+    a.menu.visible-xs-inline {
         font-size: 3rem;
         color: #000;
+        position: relative;
+        top: 3px;
     }
 
     .visible-xs-inline-block {
         display: inline-block !important;
     }
 
+    .visible-xs-inline {
+        display: inline !important;
+    }
+
     .visible-xs-block {
         display: block !important;
     }
 
-    a.search-mobile.visible-xs-inline-block {
-        width: 100%;
-        height: 34px;
+    a.search-mobile.visible-xs-inline {
         font-size: 3rem;
         color: #000;
         padding-top: 8px;
+    }
+
+    a.search-mobile img {
+        width: 19px;
+    }
+
+    a.search-mobile.text-center.visible-xs-inline span,
+    a.menu.visible-xs-inline span {
+        font-weight: 900;
+        font-size: 20px;
+        color: #2b2b2b;
+    }
+
+    a.menu.visible-xs-inline span {
+        font-size: 26px;
     }
 
     .form-group.has-feedback.center-block {
@@ -124,6 +431,36 @@
         margin-top: 30px;
     }
 
+    .modal-open .modal {
+        padding-right: 0 !important;
+    }
+
+    .modal-content {
+        min-height: 100vh;
+        height: 100%;
+        padding: 20px 3px;
+    }
+
+   .search-modal  .modal-content {
+       padding: 20px;
+   }
+
+    /*
+
+        .modal-body {
+            padding: 15px 0;
+        }
+    */
+
+
+    .modal-content ul {
+        padding-left: 20px;
+    }
+
+    .menu-mobile ul {
+        padding-left: 0;
+    }
+
     .menu-mobile ul li {
         list-style-type: none;
     }
@@ -136,7 +473,9 @@
     }
 
     ul.cabinet-links {
+        margin-top: 15px;
         margin-bottom: 30px;
+        padding-left: 0;
     }
 
     ul.cabinet-links li a {
@@ -182,6 +521,7 @@
 
     .homepage-slider .new {
         margin-top: 0;
+        font-size: 13px;
     }
 
     .homepage-slider h2 {
@@ -192,6 +532,11 @@
         position: absolute;
         bottom: -55px;
         z-index: 99;
+    }
+
+    .modal.in .modal-dialog {
+        margin: 0 !important;
+        max-width: 100%;
     }
 
     .catalog-mobile .modal-content {
@@ -215,9 +560,24 @@
         margin-bottom: 25px;
     }
 
+    button.close {
+        margin-top: -15px !important;
+        margin-right: 0;
+    }
+
+    .search-modal button.close {
+        margin-top: -3px !important;
+        margin-right: -0;
+    }
+
     .catalog-mobile button.close {
-        margin-right: 20px;
-        margin-top: -30px;
+        margin-right: 17px;
+        margin-top: -40px !important;
+    }
+
+    .login button.close {
+        margin-top: -15px !important;
+        margin-right: 0;
     }
 
     .catalog-mobile ul li.catalog-header span {
@@ -232,7 +592,7 @@
         border: 10px solid #d1d8de;
         background-color: #ffffff;
         border-radius: 0;
-        padding: 20px 10px;
+        padding: 20px 3px;
     }
 
     .login-form label {
@@ -258,6 +618,50 @@
         position: relative;
         z-index: 99;
     }
+
+    section.homepage-slider {
+        background-image: linear-gradient(208deg, rgba(226, 237, 243, 0.57) 0%, rgba(218, 227, 238, 0.57) 100%);
+    }
+
+    .catalog {
+        padding: 10px 0 33px 0;
+    }
+
+    footer {
+        padding: 39px 0 10px 0;
+    }
+
+    .main-part_sidebar-page {
+        padding: 15px 0 0 0;
+    }
+
+    section.catalog.page {
+        padding-bottom: 10px;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .pager nav.col-xs-12.text-left.no-pad {
+        padding: 0 15px !important;
+    }
+
+    .offers a.catalog-item img {
+        margin-top: 20px;
+    }
+
+    header .sub-header a {
+        padding: 10px 12px;
+    }
+
+    .profile .nav-pills {
+        padding: 15px 0;
+    }
+
+    .login h2.with-border-bot {
+        margin-top: 26px;
+        font-size: 20px;
+        font-weight: 400;
+    }
 }
 
 /*******************************************************************************
@@ -271,17 +675,20 @@
     }
 
     .main-header button.catalog {
-        width: 95px;
+        width: 90px;
         height: 45px;
+    }
+
+    .main-header button.catalog span {
+        margin-left: 0;
     }
 
     .main-header .navbar-brand>img {
         width: 45px;
     }
 
-    a.search-mobile.visible-xs-inline-block {
-        width: 80%;
-        padding-top: 14px;
+    a.search-mobile.visible-xs-inline {
+        padding-top: 10px;
         text-align: right;
     }
 
@@ -299,8 +706,41 @@
         width: auto;
     }
 
-    .catalog .row {
+    .catalog .row,
+    .catalog.page .row.last,
+    .offers .row.last {
         border-bottom: 0;
+    }
+
+    .catalog.page .row,
+    .offers .row {
+        border-bottom: 1px solid #ebebeb;
+    }
+
+    .catalog-item p {
+        margin: 10px 0 20px 0;
+    }
+
+    a.catalog-item img {
+        margin-top: 20px;
+    }
+
+    h2.with-border-bot {
+        padding-bottom: 18px;
+    }
+
+    .modal h2.with-border-bot {
+        padding-bottom: 27px;
+    }
+
+    .login h2.with-border-bot {
+        padding-bottom: 27px;
+    }
+
+    .main-part_sidebar-page h2.with-border-bot {
+        font-size: 20px;
+        font-weight: 400;
+        padding-bottom: 25px;
     }
 
     .catalog .col-sm-4.col-xs-4 {
@@ -320,10 +760,14 @@
     }
 
     .catalog .item p {
-        margin: 15px 0;
+        margin: 12px 0;
         min-height: 40px;
         height: 100%;
         text-align: left;
+    }
+
+    .catalog .item p.one-line-text {
+        margin-top: 22px;
     }
 
     .row.last .col-xs-4.col-xs-offset-4 {
@@ -345,6 +789,118 @@
         width: 15px;
         text-align: center;
     }
+
+    footer .phone-mail a,
+    footer p.address,
+    footer .how-to-get {
+        font-size: 12px;
+    }
+
+    footer p.copyright {
+        font-size: 10px;
+    }
+
+    .catalog .item p {
+        font-size: 16px;
+    }
+
+    footer .col-sm-2.col-xs-6.footer-nav {
+        padding: 0;
+    }
+
+    .catalog-item p {
+        font-size: 13px;
+    }
+
+    .carousel-product {
+        margin-bottom: 70px;
+    }
+
+    .carousel-product .carousel-indicators {
+        bottom: -40px;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        width: auto;
+    }
+
+    .carousel-product .carousel-indicators li img {
+        display: none;
+    }
+
+    .carousel-product .carousel-indicators li {
+        width: 6px;
+        height: 6px;
+        border: 1px solid #979797;
+        margin-right: 10px;
+    }
+
+    .carousel-product .carousel-indicators li.active {
+        width: 8px;
+        height: 8px;
+        background-color: #787878;
+        border: 1px solid #787878;
+        margin-right: 10px;
+    }
+
+    section.catalog.product.page {
+        padding-bottom: 30px;
+    }
+
+    .carousel-product .item {
+        background: transparent !important;
+    }
+
+    .carousel-product .item img {
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    p.product-info {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .carousel-product .item {
+        padding-bottom: 0;
+    }
+
+    .offers h2.with-border-bot {
+        padding-bottom: 25px;
+        margin-top: 0;
+        color: #2b2b2b;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .catalog.product h2 {
+        color: #2b2b2b;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .clearfix.mar-bot {
+        margin-bottom: 15px;
+    }
+
+    .form-price p.total {
+        font-size: 18px;
+        font-weight: 400;
+        padding: 9px 8px;
+    }
+
+    .form-price label, .form-price p {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    span.glyphicon.glyphicon-menu-down.for-select {
+        top: 50px;
+    }
+
+
 }
 
 /*******************************************************************************
@@ -352,14 +908,8 @@
 ********************************************************************************/
 
 @media (max-width: 400px) {
-    a.search-mobile.visible-xs-inline-block {
-        width: 100%;
-        margin-right: -15px;
-    }
 
-    .main-header button.catalog {
-        margin-left: 8px;
-    }
+
 }
 
 /*******************************************************************************
@@ -368,15 +918,13 @@
 
 @media (max-width: 350px) {
 
-    .main-header button.catalog {
-        margin-left: 10px;
+    a.navbar-brand {
+        margin-right: 15px;
     }
 
-
-    a.search-mobile.visible-xs-inline-block {
-        width: 110%;
+    a.search-mobile.visible-xs-inline {
         font-size: 2.5rem;
-        padding-top: 16px;
+        padding-top: 13px;
     }
 
     .homepage-slider h2 {
@@ -386,4 +934,12 @@
     .homepage-slider a.more {
         bottom: -35px;
     }
+    .profile .nav-pills>li {
+        margin-right: 20px;
+    }
+
+    .custom-yellow-btn {
+        padding: 18px 23px;
+    }
+
 }
