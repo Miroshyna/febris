@@ -24,6 +24,8 @@
 </head>
 
 <body>
+
+<section class="page-wrap">
 <!-- HEADER-->
 <header>
  <section class="sub-header">
@@ -56,11 +58,12 @@
         <div class="container-fluid">
             <div class="row">
 
-                <div class="col-xs-2">
+                <div class="col-sm-4 col-xs-7 no-pad-r">
                     <a class="navbar-brand" href="index.html"><img src="img/logo_53x58.svg" onerror="this.onerror=null; this.src='logo_53x58.png'" alt="FEBRIS"/></a>
-                </div>
 
-                    <div class="dropdown col-xs-2 no-pad hidden-xs">
+
+
+                    <div class="dropdown no-pad hidden-xs">
                         <button class="btn catalog dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                             Каталог <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
                         </button>
@@ -79,7 +82,8 @@
                         </ul>
                     </div>
 
-                <div class="catalog-mobile col-xs-2 text-right visible-xs-block">
+
+                <div class="catalog-mobile text-right visible-xs-inline-block">
 
                     <!-- Catalog-mobile-->
                     <button class="btn catalog dropdown-toggle" type="button" data-toggle="modal" data-target="#catalogModal">
@@ -90,7 +94,7 @@
                     <div id="catalogModal" class="modal fade catalog-mobile" tabindex="-1" role="dialog">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="lnr lnr-cross"></span></button>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close-icon.svg" alt="close"/></button>
 
                                 <ul>
                                     <li class="catalog-header"><span>Каталог</span></li>
@@ -110,23 +114,30 @@
                         </div><!-- /.modal-dialog -->
                     </div><!-- /.modal --><!-- /.catalog-mobile-->
                 </div>
+                </div>
 
-                <div class="col-xs-4 no-pad">
-                    <form class="navbar-form no-pad hidden-xs">
+
+                <div class="col-sm-4 no-pad hidden-xs">
+                    <form class="navbar-form no-pad">
                         <div class="form-group has-feedback">
                             <input type="text" class="form-control search" placeholder="Поиск">
                             <span class="lnr lnr-magnifier form-control-feedback" aria-hidden="true"></span>
                         </div>
                     </form>
+                </div>
+
+
+                <div class="col-sm-4 col-xs-5 no-pad-l text-right">
 
                     <!-- Search-mobile-->
-                    <a class="search-mobile text-center visible-xs-inline-block" data-toggle="modal" data-target="#searchModal">
-                        <span class="lnr lnr-magnifier" aria-hidden="true"></span></a>
+                    <a class="search-mobile visible-xs-inline" data-toggle="modal" data-target="#searchModal">
+                        <img src="img/search-mobile_19.svg" onerror="this.onerror=null; this.src='search-mobile_19.png' " alt="Поиск"/>
+                    </a>
                     <!-- modal -->
-                    <div id="searchModal" class="modal fade" tabindex="-1" role="dialog">
+                    <div id="searchModal" class="modal search-modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="lnr lnr-cross"></span></button>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close-icon.svg" alt="close"/></button>
                                 <form class="navbar-form">
                                     <div class="form-group has-feedback center-block">
                                         <input type="text" class="form-control search" placeholder="Поиск">
@@ -136,9 +147,6 @@
                             </div><!-- /.modal-content -->
                         </div><!-- /.modal-dialog -->
                     </div><!-- /.modal --><!-- /.Search-mobile-->
-                </div>
-
-                <div class="col-xs-4 text-right">
 
                     <!-- Login modal -->
                     <a class="login hidden-xs" href="#" data-toggle="modal" data-target="#loginModal">Вход</a>
@@ -148,7 +156,7 @@
                         <div class="modal-dialog login" role="document">
                             <div class="modal-content text-left">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="lnr lnr-cross"></span></button>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close-icon.svg" alt="close"/></button>
                                     <h2 class="with-border-bot">Вход</h2>
                                 </div>
                                 <div class="modal-body">
@@ -187,7 +195,7 @@
                         </div><!-- /.modal-dialog -->
                     </div><!-- /.modal --><!-- /.Login modal -->
 
-                    <a class="registration hidden-xs" href="#">Регистрация</a>
+                    <a class="registration hidden-xs" href="registration.html">Регистрация</a>
 
                     <!-- Registration modal -->
 
@@ -196,7 +204,7 @@
                         <div class="modal-dialog login" role="document">
                             <div class="modal-content text-left">
                                 <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="lnr lnr-cross"></span></button>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close-icon.svg" alt="close"/></button>
                                     <h2 class="with-border-bot">Регистрация</h2>
                                 </div>
                                 <div class="modal-body">
@@ -231,17 +239,18 @@
                         </div><!-- /.modal-dialog -->
                     </div><!-- /.modal --><!-- /.Registration modal -->
 
-                    <a class="cart" href="#"><span class="lnr lnr-cart"></span> <span class="qty-tag">2</span></a>
+
+                    <a class="cart empty" href="#"><span class="lnr lnr-cart"></span> <span class="qty-tag">0</span></a>
 
                     <!--  Mobile Menu-->
-                    <a class="menu visible-xs-inline-block" href="#"  data-toggle="modal" data-target="#menuModal"><span class="lnr lnr-menu"></span></a>
+                    <a class="menu visible-xs-inline" href="#"  data-toggle="modal" data-target="#menuModal"><span class="lnr lnr-menu"></span></a>
 
                     <!-- modal -->
                     <div id="menuModal" class="modal fade menu-mobile" tabindex="-1" role="dialog">
                         <div class="modal-dialog" role="document">
                             <div class="modal-content text-left">
                                 <div class="modal-body">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="lnr lnr-cross"></span></button>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="img/close-icon.svg" alt="close"/></button>
                                     <ul class="cabinet-links">
                                         <li>
                                             <a href="#" data-toggle="modal" data-target="#loginModal" data-dismiss="modal">Вход</a>
@@ -357,7 +366,7 @@
             <div class="col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog3_200.jpg" alt="Толкатели"/>
-                <p class="item-sign text-center">Толкатели</p>
+                <p class="item-sign text-center one-line-text">Толкатели</p>
                 </a>
             </div>
         </div>
@@ -367,7 +376,7 @@
             <div class="col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog4_200.jpg" alt="Рамы и аксессуары"/>
-                <p class="item-sign text-center">Рамы и аксессуары</p>
+                <p class="item-sign text-center one-line-text">Рамы и аксессуары</p>
                 </a>
             </div>
             <div class="col-sm-4 col-xs-4">
@@ -389,7 +398,7 @@
             <div class="col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog7_200.jpg" alt="Шелфтокеры"/>
-                <p class="item-sign text-center">Шелфтокеры</p>
+                <p class="item-sign text-center one-line-text">Шелфтокеры</p>
                 </a>
             </div>
             <div class="col-sm-4 col-xs-4">
@@ -401,7 +410,7 @@
             <div class="col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog9_200.jpg" alt="Толкатели"/>
-                <p class="item-sign text-center">Толкатели</p>
+                <p class="item-sign text-center one-line-text">Толкатели</p>
                 </a>
             </div>
         </div>
@@ -437,9 +446,9 @@
 </section><!-- Search End -->
 
 <!-- MAIN CONTENT End-->
-
+</section>
 <!-- FOOTER-->
-<footer>
+<footer class="sticky-footer">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-2 hidden-xs">
@@ -458,7 +467,7 @@
             </div>
 
             <div class="col-sm-2 col-xs-6 cabinet-links">
-                <a href="#">Каталог</a>
+                <a href="catalog.html">Каталог</a>
                 <a href="#">Мой кабинет</a>
                 <a href="#">Вход</a>
                 <a href="#">Регистрация</a>
