@@ -11,6 +11,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
     <link href="css/base.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/media.css" rel="stylesheet">
@@ -65,7 +66,7 @@
 
                     <div class="dropdown no-pad hidden-xs">
                         <button class="btn catalog dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                            Каталог <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                            Каталог <img class="arr-down" src="img/arr-down-icon.png" alt="Каталог"/>
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                             <li class="dropdown-header">Каталог <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></li>
@@ -87,7 +88,7 @@
 
                     <!-- Catalog-mobile-->
                     <button class="btn catalog dropdown-toggle" type="button" data-toggle="modal" data-target="#catalogModal">
-                        Каталог <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                        Каталог <img class="arr-down" src="img/arr-down-icon.png" alt="Каталог"/>
                     </button>
 
                     <!-- modal -->
@@ -121,7 +122,7 @@
                     <form class="navbar-form no-pad">
                         <div class="form-group has-feedback">
                             <input type="text" class="form-control search" placeholder="Поиск">
-                            <span class="lnr lnr-magnifier form-control-feedback" aria-hidden="true"></span>
+     <a href="#"><img src="img/search-mobile_19.svg" onerror="this.onerror=null; this.src='search-mobile_19.png' " alt="Поиск"/></a>
                         </div>
                     </form>
                 </div>
@@ -141,7 +142,7 @@
                                 <form class="navbar-form">
                                     <div class="form-group has-feedback center-block">
                                         <input type="text" class="form-control search" placeholder="Поиск">
-                                        <span class="lnr lnr-magnifier form-control-feedback" aria-hidden="true"></span>
+                                        <img src="img/search-mobile_19.svg" onerror="this.onerror=null; this.src='search-mobile_19.png' " alt="Поиск"/>
                                     </div>
                                 </form>
                             </div><!-- /.modal-content -->
@@ -240,7 +241,7 @@
                     </div><!-- /.modal --><!-- /.Registration modal -->
 
 
-                    <a class="cart empty" href="#"><span class="lnr lnr-cart"></span> <span class="qty-tag">0</span></a>
+                    <a class="cart empty" href="#"><img src="img/cart_27.svg" onerror="this.onerror=null; this.src='cart_27.png' " alt="Корзина"/> <span class="qty-tag">0</span></a>
 
                     <!--  Mobile Menu-->
                     <a class="menu visible-xs-inline" href="#"  data-toggle="modal" data-target="#menuModal"><span class="lnr lnr-menu"></span></a>
@@ -285,12 +286,71 @@
 <section class="homepage-slider">
     <div class="container-fluid">
         <div class="row">
-    <div id="carousel" class="carousel slide homepage-slider" data-ride="carousel">
+
+            <!--  1 slider -->
+            <div class="block-text  col-sm-4 col-xs-12 no-pad hidden-xs">
+                <div class="carousel-text slider-for">
+                    <!-- 1 slide -->
+                    <div class="slide-item caption">
+                        <p class="new">новинка</p>
+                        <h2 class="hidden-xs">Рамы<br>и аксессуры<br>от Rebus</h2>
+                        <h2 class="visible-xs-block">Рамы и аксессуры<br>от Rebus</h2>
+                        <p class="description hidden-xs">Это лучшие в мире рамки</p>
+                        <a class="more" href="#"><span class="rounded"><img src="img/arr-slider.png" alt="Подробнее"/></span> <span class="hidden-xs">Подробнее</span></a>
+                    </div>
+
+                    <!-- 2 slide -->
+                    <div class="slide-item caption">
+                        <p class="new">новинка</p>
+                        <h2 class="hidden-xs">Рамы<br>и аксессуры<br>от Rebus</h2>
+                        <h2 class="visible-xs-block">Рамы и аксессуры<br>от Rebus</h2>
+                        <p class="description hidden-xs">Это лучшие в мире рамки</p>
+                        <a class="more" href="#"><span class="rounded"><img src="img/arr-slider.png" alt="Подробнее"/></span> <span class="hidden-xs">Подробнее</span></a>
+                    </div>
+
+                    <!-- 3 slide -->
+                    <div class="slide-item caption">
+                        <p class="new">новинка</p>
+                        <h2 class="hidden-xs">Рамы<br>и аксессуры<br>от Rebus</h2>
+                        <h2 class="visible-xs-block">Рамы и аксессуры<br>от Rebus</h2>
+                        <p class="description hidden-xs">Это лучшие в мире рамки</p>
+                        <a class="more" href="#"><span class="rounded"><img src="img/arr-slider.png" alt="Подробнее"/></span> <span class="hidden-xs">Подробнее</span></a>
+                    </div>
+                </div>
+            </div><!--  1 slider end -->
+
+            <!--  2 slider -->
+            <div class="block-media col-sm-8 col-xs-12 no-pad hidden-xs">
+
+                <div class="carousel-images slider-nav">
+
+                    <!-- 1 slide -->
+                    <div class="slide-item">
+                        <img src="img/slider-img_654x520.png" alt="Рамы и аксессуры от Rebus">
+                    </div>
+
+
+                    <!-- 2 slide -->
+                    <div class="slide-item">
+                        <img src="img/software.png" alt="Рамы и аксессуры от Rebus">
+                    </div>
+
+                    <!-- 3 slide -->
+                    <div class="slide-item">
+                        <img src="img/catalog1_200.jpg" alt="Рамы и аксессуры от Rebus">
+                    </div>
+                </div>
+
+            </div><!--  2 slider end -->
+
+<!--   Slider mobile -->
+
+    <div id="carousel" class="carousel slide homepage-slider visible-xs-block" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel" data-slide-to="1"></li>
-            <li data-target="#carousel" data-slide-to="2"></li>
+            <li data-target=".carousel" data-slide-to="0" class="active"></li>
+            <li data-target=".carousel" data-slide-to="1"></li>
+            <li data-target=".carousel" data-slide-to="2"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -302,7 +362,7 @@
                     <h2 class="hidden-xs">Рамы<br>и аксессуры<br>от Rebus</h2>
                     <h2 class="visible-xs-block">Рамы и аксессуры<br>от Rebus</h2>
                     <p class="description hidden-xs">Это лучшие в мире рамки</p>
-                    <a class="more" href="#"><span class="rounded"><span class="lnr lnr-chevron-right"></span></span> Подробнее</a>
+                    <a class="more" href="#"><span class="rounded"><img src="img/arr-slider.png" alt="Подробнее"/></span> <span class="hidden-xs">Подробнее</span></a>
                 </div>
                 <div  class="col-sm-8 no-pad">
                 <img src="img/slider-img_654x520.png" alt="Рамы и аксессуры от Rebus">
@@ -316,7 +376,7 @@
                     <h2 class="hidden-xs">Рамы<br>и аксессуры<br>от Rebus</h2>
                     <h2 class="visible-xs-block">Рамы и аксессуры<br>от Rebus</h2>
                     <p class="description hidden-xs">Это лучшие в мире рамки</p>
-                    <a class="more" href="#"><span class="rounded"><span class="lnr lnr-chevron-right"></span></span> Подробнее</a>
+                    <a class="more" href="#"><span class="rounded"><img src="img/arr-slider.png" alt="Подробнее"/></span> <span class="hidden-xs">Подробнее</span></a>
                 </div>
                 <div  class="col-sm-8 no-pad">
                     <img src="img/slider-img_654x520.png" alt="Рамы и аксессуры от Rebus">
@@ -330,7 +390,7 @@
                     <h2 class="hidden-xs">Рамы<br>и аксессуры<br>от Rebus</h2>
                     <h2 class="visible-xs-block">Рамы и аксессуры<br>от Rebus</h2>
                     <p class="description hidden-xs">Это лучшие в мире рамки</p>
-                    <a class="more" href="#"><span class="rounded"><span class="lnr lnr-chevron-right"></span></span> Подробнее</a>
+                    <a class="more" href="#"><span class="rounded"><img src="img/arr-slider.png" alt="Подробнее"/></span> <span class="hidden-xs">Подробнее</span></a>
                 </div>
                 <div  class="col-sm-8 no-pad">
                     <img src="img/slider-img_654x520.png" alt="Рамы и аксессуры от Rebus">
@@ -339,98 +399,86 @@
         </div>
 
     </div>
+
+
         </div>
     </div>
 </section><!-- Slider End-->
 
 <!-- Catalog -->
 <section class="catalog">
-    <div class="container-fluid">
+    <div class="container-fluid white-bg">
 
-        <div class="row">
+        <div class="row last">
             <div class="col-xs-12">
             <h2 class="with-border-bot">Каталог</h2>
             </div>
-            <div class="col-sm-4 col-xs-4">
+            <div class="item-catalog-main col-lg-3 col-md-4 col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog1_200.jpg" alt="Полочные ценникодержатели"/>
                 <p class="item-sign text-center">Полочные<br>ценникодержатели</p>
                 </a>
             </div>
-            <div class="col-sm-4 col-xs-4">
+            <div class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog2_200.jpg" alt="Разделители товаров"/>
                 <p class="item-sign text-center">Разделители<br>товаров</p>
                 </a>
             </div>
-            <div class="col-sm-4 col-xs-4">
+            <div class="item-catalog-main col-lg-3 col-md-4 col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog3_200.jpg" alt="Толкатели"/>
                 <p class="item-sign text-center one-line-text">Толкатели</p>
                 </a>
             </div>
-        </div>
 
-
-        <div class="row">
-            <div class="col-sm-4 col-xs-4">
+            <div class="item-catalog-main col-lg-3 col-md-4 col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog4_200.jpg" alt="Рамы и аксессуары"/>
                 <p class="item-sign text-center one-line-text">Рамы и аксессуары</p>
                 </a>
             </div>
-            <div class="col-sm-4 col-xs-4">
+
+            <div class="item-catalog-main col-lg-3 col-md-4 col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog5_200.jpg" alt="Прищепки и держатели ценников"/>
                 <p class="item-sign text-center">Прищепки и держатели<br>ценников</p>
                 </a>
             </div>
-            <div class="col-sm-4 col-xs-4">
+
+            <div class="item-catalog-main col-lg-3 col-md-4 col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog6_200.jpg" alt="Подвесные системы"/>
                 <p class="item-sign text-center">Подвесные<br>системы</p>
                 </a>
             </div>
-        </div>
 
-
-        <div class="row">
-            <div class="col-sm-4 col-xs-4">
+            <div class="item-catalog-main col-lg-3 col-md-4 col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog7_200.jpg" alt="Шелфтокеры"/>
                 <p class="item-sign text-center one-line-text">Шелфтокеры</p>
                 </a>
             </div>
-            <div class="col-sm-4 col-xs-4">
+            <div class="item-catalog-main col-lg-3 col-md-4 col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog8_200.jpg" alt="Держатели информации"/>
                 <p class="item-sign text-center">Держатели<br>информации</p>
                 </a>
             </div>
-            <div class="col-sm-4 col-xs-4">
+            <div class="item-catalog-main col-lg-3 col-md-4 col-sm-4 col-xs-4">
                 <a href="#" class="item">
                 <img src="img/catalog9_200.jpg" alt="Толкатели"/>
                 <p class="item-sign text-center one-line-text">Толкатели</p>
                 </a>
             </div>
-        </div>
-
-
-        <div class="row last">
-                <div class="col-xs-4 col-xs-offset-4">
-                    <a href="#" class="item center-aligned">
-                <img src="img/catalog10_200.jpg" alt="Электронные ценники"/>
-                <p class="item-sign text-center">Электронные<br>ценники</p>
-                    </a>
-                </div>
 
         </div>
     </div>
 </section><!-- Catalog End -->
 
 <!-- Search -->
-<section class="search custom-light-yellow hidden-xs">
-    <div class="container-fluid">
+<section class="search hidden-xs">
+    <div class="container-fluid custom-light-yellow">
         <div class="row">
             <div class="col-sm-2 text-center">
                 <span class="lnr lnr-magnifier custom-yellow-text" aria-hidden="true"></span>
@@ -490,8 +538,11 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/common-slick.js"></script>
 
 </body>
 </html>

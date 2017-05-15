@@ -10,7 +10,6 @@
     }
 
     .main-header ul.dropdown-menu {
-        width: 420px;
         right: 0;
     }
 
@@ -30,9 +29,7 @@
 ********************************************************************************/
 
 @media (max-width: 1920px) {
-    .main-header ul.dropdown-menu {
-        width: 420px;
-    }
+
 
 }
 
@@ -43,9 +40,7 @@
 ********************************************************************************/
 
 @media (max-width: 1500px) {
-    .main-header ul.dropdown-menu {
-        width: 370px;
-    }
+
 
 }
 
@@ -55,22 +50,19 @@
 ********************************************************************************/
 
 @media (max-width: 1300px) {
-    .main-header ul.dropdown-menu {
-        width: 320px;
-        top: -2px;
-        right: -30px;
-        left: auto;
-    }
+
 }
 
 /*******************************************************************************
-              1200 +
+              1200 -
 ********************************************************************************/
 
 @media (max-width: 1200px) {
-    .main-header ul.dropdown-menu {
-        width: 290px;
+    .catalog-item.text-center.hidden-xs,
+    .catalog-item.text-right.hidden-xs {
+        text-align: left;
     }
+
 }
 
 
@@ -80,11 +72,7 @@
 ********************************************************************************/
 
 @media (max-width: 1100px) {
-    .main-header ul.dropdown-menu {
-        width: 290px;
-        right: -40px;
-        left: auto;
-    }
+
 }
 
 
@@ -96,8 +84,7 @@
 
     .main-header ul.dropdown-menu {
         width: 290px;
-        right: auto;
-        left: 120px;
+        right: 0;
     }
 
     .main-header a.cart{
@@ -115,6 +102,11 @@
     .divider-vertical {
         right: 15px;
     }
+
+    span.checkout.text-right {
+        margin-left: 45px;
+    }
+
 }
 
 
@@ -123,10 +115,9 @@
 ********************************************************************************/
 
 @media (max-width: 990px) {
-    section,
-    footer {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+    .container-fluid {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 
     a.navbar-brand {
@@ -140,6 +131,27 @@
     .profile .table>tbody>tr>td, .profile .table>tbody>tr>td a {
         font-size: 11px;
     }
+
+    section.page-wrap.for-catalog {
+        width: 98.7%;
+    }
+    .main-header {
+        height: auto;
+    }
+
+    span.checkout.text-right {
+        margin-left: 10px;
+        display: inline-block;
+    }
+
+    span.checkout.text-right .custom-yellow-btn {
+        padding: 19px 7px;
+    }
+
+    .notification .custom-yellow-btn {
+        padding: 19px 2px;
+    }
+
 }
 
 /*******************************************************************************
@@ -167,8 +179,7 @@
         padding: 10px 8px;
     }
 
-
-    section.profile {
+    section.profile .container-fluid {
         padding-bottom: 40px;
     }
 
@@ -183,22 +194,28 @@
         width: 100%;
     }
 
-    .profile .nav-pills>li {
+    .profile .nav-pills > li {
         margin-right: 25px;
     }
 
-    .profile .nav-pills>li>a,
-    .profile .nav-pills>li.active>a,
-    .profile .nav>li>a:focus,
-    .profile .nav>li>a:hover {
+    .profile .nav-pills > li > a,
+    .profile .nav-pills > li.active > a,
+    .profile .nav > li > a:focus,
+    .profile .nav > li > a:hover {
         border-radius: 3px;
         font-size: 13px !important;
         padding: 5px 11px !important;
+        margin-top: 0;
+        min-width: 88px;
     }
 
     .client-info {
-        margin: 24px 0;
+        margin: 20px 0 30px 0;
         border-bottom: 1px solid #f3f3f3;
+    }
+
+    .client-info.last {
+        border: 0;
     }
 
     .client-info p {
@@ -206,6 +223,7 @@
         font-size: 15px;
         font-weight: 400;
         line-height: 1.4;
+        margin-bottom: 18px;
     }
 
     p.status {
@@ -213,8 +231,9 @@
         font-weight: 400;
         border: 0;
         padding: 0;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
+
     .client-info a:hover,
     .client-info a:focus {
         text-decoration: none;
@@ -231,7 +250,7 @@
         border: 0;
         border-radius: 0;
         box-shadow: none;
-        padding: 20px 20px 10px 20px;
+        padding: 20px 20px 15px 20px;
         margin-bottom: 0;
     }
 
@@ -261,11 +280,15 @@
     }
 
     .profile-content.with-form h4 {
-        margin: 40px 0 10px 0;
+        margin: 35px 0 10px 0;
     }
 
     .profile-content.with-form {
         padding: 0;
+    }
+
+    .registration-page .form-horizontal .control-label {
+        padding-top: 0;
     }
 
     .page-wrap {
@@ -289,18 +312,427 @@
         font-size: 13px;
     }
 
+    button.close img {
+        width: 14px;
+    }
+
+    form.login-form .row {
+        margin-top: 20px;
+    }
+
+    .profile .orderview h2 {
+        margin: 35px 0 15px 0;
+    }
+
+    .address-customer h6 {
+        color: #656565;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 19px;
+        margin-top: 8px;
+    }
+
+    .address-customer {
+        margin-bottom: 15px;
+    }
+
+    .customers-info {
+        margin-bottom: 5px;
+    }
+
+    .product-data img {
+        margin: 0 20px 20px 0;
+    }
+
+    .orderview .product-description {
+        max-width: 140px;
+    }
+
+    .orderview .product-description h3 {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 0 0 15px 0;
+    }
+
+    .product-data span.price {
+        margin: 14px 0 20px 0;
+    }
+
+    .product-action .total {
+        width: 275px;
+        margin: 15px 0 20px 0;
+        font-size: 24px;
+        font-weight: 300;
+        padding-left: 0;
+    }
+
+    section.profile .container-fluid {
+        padding-bottom: 25px;
+    }
+
+    section.customers .container-fluid {
+        padding-bottom: 40px;
+    }
+
+    .cart .product-data img {
+        margin: 0 15px 15px 0;
+        width: 125px;
+    }
+
+    .product-description {
+        width: 45%;
+    }
+
+    .main-part_sidebar-page .product-description {
+        width: 100%;
+    }
+
+    .cart-product h3 {
+        font-size: 13px;
+        line-height: 1.24;
+        margin: 0 0 30px 0;
+    }
+
+    .cart .product-data span.price {
+        margin-left: 0;
+        margin-right: 0;
+        top: 0;
+        margin-top: 10px;
+    }
+
+    .cart .form-group {
+        width: 125px;
+        display: inline-block;
+    }
+
+    .cart .form-group.product-qty {
+        width: 110px;
+        margin-left: 15px;
+    }
+
+    span.price-label.visible-xs-block {
+        color: #656565;
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    section.registration-page .container-fluid {
+        padding: 5px 0 60px 0;
+    }
+
+    .registration-page.cart h2 {
+        border-bottom: 2px solid #ede70a;
+        margin-bottom: 5px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .cart .product-data {
+        margin-top: 20px;
+    }
+
+
+    .total-cart {
+        color: #656565;
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: 25px;
+    }
+
+    .total-cart span.total {
+        display: inline-block;
+        width: 150px;
+        height: 54px;
+        border-radius: 6px;
+        background-color: #eef4f8;
+        text-align: center;
+        color: #1a1a1a;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 2.5;
+        margin-left: 15px;
+    }
+
+    .checkout-mobile a.custom-yellow-btn {
+        margin-top: 20px;
+        display: inline-block;
+        width: 170px;
+        height: 60px;
+        padding: 0;
+        line-height: 3.9;
+    }
+
+    .cart-proposition h2.with-border-bot.grey-border {
+        padding-bottom: 30px;
+        color: #2b2b2b;
+        font-size: 20px;
+        letter-spacing: -0.5px;
+        font-weight: 400;
+        border-bottom: 2px solid #e2edf3;
+    }
+
+    .order-login.registration-message {
+        padding: 15px 0 65px 0;
+    }
+
+    .order-login h2.with-border-bot {
+        font-size: 20px;
+        font-weight: 400;
+        color: #2b2b2b;
+        padding-bottom: 25px;
+    }
+
+    .yellow-message {
+        padding: 25px 20px 20px 20px;
+        background-color: #fcfcef;
+    }
+
+    .yellow-message p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .yellow-message ul li a {
+        padding: 9px 0 5px 0;
+    }
+
+    .order-steps .step span.step-description {
+        margin-right: 7px;
+        font-size: 11px;
+    }
+
+    .order-steps .step span.step-description.last {
+        margin-right: 0;
+    }
+
+    .order-steps .step span.step-count {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        font-size: 11px;
+        line-height: 1.7;
+        margin-right: 3px;
+    }
+
+    .heading.with-border-bot h2 {
+        color: #2b2b2b;
+        font-size: 20px;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .order-steps {
+        margin-bottom: 15px;
+    }
+
+    .heading.with-border-bot {
+        margin-bottom: 30px;
+    }
+
+    .with-border-bot.grey-border h4 {
+        font-size: 19px;
+        line-height: 1.3;
+    }
+
+    span.data-name {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+
+    a.data-choice {
+        padding: 16px 8px 16px 8px;
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+
+    .tax-data a.data-choice {
+        margin-right: 15px;
+    }
+
+    .row.with-border-bot.grey-border {
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+    }
+
+    .order-pay .form-horizontal .control-label {
+        padding-top: 0;
+    }
+
+    .order-steps {
+        margin-top: 15px;
+    }
+
+    h4 a.custom-yellow-btn {
+        margin-left: 0;
+        margin-top: 0;
+        padding: 21px 27px;
+        display: inline-block;
+    }
+
+    .step-choice span.rounded {
+        display: inline-block;
+        width: 23px;
+        height: 23px;
+        background-color: #ede70a;
+        border-radius: 50%;
+        text-align: center;
+        vertical-align: middle;
+        margin-right: 5px;
+        padding: 2px 0 0 3px;
+    }
+
+    .step-choice span.rounded span {
+        color: #070707;
+        font-size: 10px;
+        font-weight: 900;
+        line-height: 2.3;
+        padding-left: 3px;
+    }
+
+    a.step-choice {
+        color: #1a1a1a;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .choice-description h4 {
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+    .choose .client-info {
+        margin: 25px 0;
+    }
+
+    section.order-pay.choose.registration-page.profile .container-fluid {
+        padding: 25px 0 20px 0;
+    }
+
+    .our-address a.how-to-get {
+        display: block;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .address-choose .with-border-bot.grey-border h4 {
+        margin-top: 0;
+    }
+
+    section.order-pay.delivery.registration-page.profile .container-fluid {
+        padding: 5px 0 20px 0;
+    }
+
+    .delivery .heading.with-border-bot {
+        margin-bottom: 38px;
+    }
+
+    .row.delivery.choice-description {
+        margin-top: 15px;
+    }
+
+    .row.delivery.choice-description h4 a.custom-yellow-btn {
+        margin-left: 0;
+        display: block;
+        max-width: 235px;
+        margin-top: 20px;
+    }
+
+    .client-info.last {
+        border: 0;
+        margin-bottom: 40px;
+    }
+
+    .radio-custom label {
+        width: 100%;
+        padding-left: 35px;
+        margin-right: 0;
+        left: -5px;
+        top: -15px;
+    }
+
+    .heading.with-border-bot {
+        border-bottom: 2px solid #ede70a;
+    }
+
+    section.order-check .container-fluid {
+        padding: 5px 0 50px 0;
+    }
+
+    .order-address .heading.with-border-bot {
+        margin-bottom: 27px;
+    }
+
+    .order-address .row.with-border-bot.grey-border {
+        padding-bottom: 6px;
+        margin-bottom: 28px;
+    }
+
+    .order-check p.message {
+        padding: 20px 25px 30px 25px;
+        margin-bottom: 23px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+
+    .order-check .action {
+        margin-top: 20px;
+    }
+
+    .order-check .product-action .action a {
+        margin-bottom: 13px;
+    }
+
+    section.registration-message.success .container-fluid {
+        padding: 10px 0 60px 0;
+    }
+
+    .succeess h2.with-border-bot {
+        color: #2b2b2b;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 45px;
+    }
+
+    .success .message {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .succeess .message p {
+        color: #2b2b2b;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+
+    html, body {
+        background-color: #fff;
+    }
+
+    .cart .product-data span.price.hidden-xs {
+        vertical-align: bottom;
+        top: 65px;
+    }
+
+    .catalog .row.w-645 {
+        max-width: 100%;
+        margin-right: 0;
+    }
 }
 
 /*******************************************************************************
               825 -
 ********************************************************************************/
 
-@media (max-width: 860px) {
+@media (max-width: 825px) {
     .homepage-slider h2 {
         font-size: 4rem;
         margin-bottom: 10px;
     }
-
 
 }
 
@@ -314,10 +746,9 @@
         padding: 0 !important;
     }
 
-    section,
-    footer {
-        padding-left: 5px !important;
-        padding-right: 5px !important;
+    .container-fluid {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
     }
 
     ul.contact-info.nav.navbar-nav>li {
@@ -369,16 +800,15 @@
     }
 
     .main-header a.cart {
-
         position: relative;
-        top: 1px
+        top: 8px
     }
 
     a.menu.visible-xs-inline {
         font-size: 3rem;
         color: #000;
         position: relative;
-        top: 3px;
+        top: 5px;
     }
 
     .visible-xs-inline-block {
@@ -391,6 +821,9 @@
 
     .visible-xs-block {
         display: block !important;
+    }
+    .visible-xs-inline-block {
+        display: inline-block !important;
     }
 
     a.search-mobile.visible-xs-inline {
@@ -444,14 +877,6 @@
    .search-modal  .modal-content {
        padding: 20px;
    }
-
-    /*
-
-        .modal-body {
-            padding: 15px 0;
-        }
-    */
-
 
     .modal-content ul {
         padding-left: 20px;
@@ -510,13 +935,20 @@
     }
 
     .login button.btn.custom-yellow-btn.visible-xs-block {
-        margin-top: 10px;
+        margin-top: 7px;
         margin-bottom: 100px;
+        padding: 18px 27px;
     }
 
     .homepage-slider .caption {
         padding: 25px 15px;
         position: relative;
+        height: auto;
+    }
+
+    .homepage-slider img {
+        height: auto;
+        width: 100%;
     }
 
     .homepage-slider .new {
@@ -528,10 +960,25 @@
         margin-bottom: 0;
     }
 
+
     .homepage-slider a.more {
         position: absolute;
         bottom: -55px;
         z-index: 99;
+    }
+
+    a.more .rounded {
+        width: 29px;
+    }
+
+    ul.slick-dots {
+        position: absolute;
+        bottom: -200px;
+        z-index: 999;
+        left: 44%;
+        margin-left: 0;
+        padding-left: 0;
+        width: auto;
     }
 
     .modal.in .modal-dialog {
@@ -592,14 +1039,14 @@
         border: 10px solid #d1d8de;
         background-color: #ffffff;
         border-radius: 0;
-        padding: 20px 3px;
+        padding: 20px 3px 0 3px;
     }
 
     .login-form label {
         color: #2b2b2b;
         font-size: 15px;
         font-weight: 400;
-        margin: 5px 0 7px 0;
+        margin: 0 0 13px 0;
     }
 
     .registration-form button {
@@ -623,8 +1070,8 @@
         background-image: linear-gradient(208deg, rgba(226, 237, 243, 0.57) 0%, rgba(218, 227, 238, 0.57) 100%);
     }
 
-    .catalog {
-        padding: 10px 0 33px 0;
+    .catalog .container-fluid {
+        padding: 20px 0 33px 0;
     }
 
     footer {
@@ -632,13 +1079,18 @@
     }
 
     .main-part_sidebar-page {
-        padding: 15px 0 0 0;
+        padding: 15px 15px 0 15px;
+        width: 100%;
     }
 
-    section.catalog.page {
+    section.page-wrap.for-catalog {
+        width: 100%;
+    }
+
+    section.catalog.page .container-fluid {
         padding-bottom: 10px;
-        padding-left: 5px !important;
-        padding-right: 5px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
     }
 
     .pager nav.col-xs-12.text-left.no-pad {
@@ -654,13 +1106,54 @@
     }
 
     .profile .nav-pills {
-        padding: 15px 0;
+        padding: 13px 0;
     }
 
     .login h2.with-border-bot {
         margin-top: 26px;
         font-size: 20px;
         font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+
+    .order-steps {
+        text-align: left;
+        padding-right: 0;
+        margin-top: 0;
+    }
+
+    .order-steps .step {
+        width: 33%;
+    }
+
+    .order-steps .step span.step-count {
+        vertical-align: top;
+    }
+    .cart-product h3 {
+        margin: 0;
+        min-height: 60px;
+    }
+
+    .product-data span.price {
+        margin: 14px 0 20px 0;
+        min-width: 84px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 2.3;
+        padding: 0;
+    }
+
+}
+
+
+/*******************************************************************************
+              550 -
+********************************************************************************/
+
+@media (max-width: 550px) {
+    .order-steps .step {
+        width: 30%;
     }
 }
 
@@ -679,12 +1172,16 @@
         height: 45px;
     }
 
+    header img.arr-down {
+        margin-left: 5px;
+    }
+
     .main-header button.catalog span {
         margin-left: 0;
     }
 
     .main-header .navbar-brand>img {
-        width: 45px;
+        width: 43px;
     }
 
     a.search-mobile.visible-xs-inline {
@@ -696,11 +1193,11 @@
         margin-top: 15px;
         margin-right: 0;
         margin-left: 10px;
-        top: 0;
+        top: 5px;
     }
 
     .carousel-indicators {
-        bottom: 5px;
+        bottom: 0;
         left: 0;
         margin-left: 15px;
         width: auto;
@@ -743,7 +1240,7 @@
         padding-bottom: 25px;
     }
 
-    .catalog .col-sm-4.col-xs-4 {
+    .catalog .item-catalog-main {
         width: 100%;
         display: block;
     }
@@ -843,7 +1340,7 @@
         margin-right: 10px;
     }
 
-    section.catalog.product.page {
+    section.catalog.product.page .container-fluid {
         padding-bottom: 30px;
     }
 
@@ -890,26 +1387,38 @@
         font-weight: 400;
         padding: 9px 8px;
     }
-
     .form-price label, .form-price p {
         font-size: 13px;
-        margin-bottom: 15px;
+        margin-bottom: 12px;
     }
 
     span.glyphicon.glyphicon-menu-down.for-select {
         top: 50px;
     }
 
+    .row.notification {
+        margin-bottom: 40px;
+    }
+
+    h4 a.custom-yellow-btn {
+        margin-top: 27px;
+    }
 
 }
 
 /*******************************************************************************
-              400 -
+              430 -
 ********************************************************************************/
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
 
+    .order-steps .step {
+        width: auto;
+    }
 
+    .tax-data a.data-choice.active {
+        padding: 16px 20px 16px 20px;
+    }
 }
 
 /*******************************************************************************
@@ -927,8 +1436,32 @@
         padding-top: 13px;
     }
 
+    .main-header {
+        height: 75px;
+    }
+
+    .main-header .container-fluid {
+        padding: 9px 0;
+        height: 75px;
+    }
+
+    .main-header button.catalog {
+        width: 90px;
+        height: 40px;
+        margin-top: 7px;
+    }
+
+    header img.arr-down {
+        margin-left: 5px;
+    }
+
+    .col-sm-4.col-xs-5.text-right a {
+        margin-left: 12px;
+    }
+
     .homepage-slider h2 {
-        font-size: 3.7rem;
+        font-size: 25px;
+        margin-top: 11px;
     }
 
     .homepage-slider a.more {
@@ -940,6 +1473,10 @@
 
     .custom-yellow-btn {
         padding: 18px 23px;
+    }
+
+    select.choice, select.color {
+        background-position: 85px 22px !important;
     }
 
 }

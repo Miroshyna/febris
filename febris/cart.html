@@ -26,6 +26,7 @@
 <body>
 
 <section class="page-wrap">
+
 <!-- HEADER-->
 <header>
     <section class="sub-header">
@@ -121,7 +122,7 @@
                     <form class="navbar-form no-pad">
                         <div class="form-group has-feedback">
                             <input type="text" class="form-control search" placeholder="Поиск">
-                            <a href="#"><img src="img/search-mobile_19.svg" onerror="this.onerror=null; this.src='search-mobile_19.png' " alt="Поиск"/></a>
+                            <img src="img/search-mobile_19.svg" onerror="this.onerror=null; this.src='search-mobile_19.png' " alt="Поиск"/>
                         </div>
                     </form>
                 </div>
@@ -188,295 +189,280 @@
     </section>
 </header><!-- HEADER End-->
 
-<!-- MAIN CONTENT with sidebar-->
-<section class="catalog product page">
+<!-- MAIN CONTENT-->
+
+<!-- CART -->
+<section class="registration-page cart">
     <div class="container-fluid white-bg">
-        <div class="row last">
-            <!--  Sidebar-->
-            <aside class="sidebar left hidden-xs">
-                <ul class="categories-menu">
-                    <li><a href="#">Полочные ценникодержатели</a></li>
-                    <li class="active category">
-                        <a href="#">Разделители товаров</a>
-                        <!-- 1 nesting level -->
-                        <ul class="sub">
-                            <li class="active sub-category">
-                                <a href="#">Ценникодержатели на шарнирах</a>
-                            </li>
-                            <li class="active sub-category">
-                                <a href="#"> Ценникодержатели с большой прищепкой</a>
-
-                                <!-- 2 nesting level -->
-                                <ul class="sub second-level-ul">
-                                    <li class="active sub-category second-level">
-                                        <a href="#">Ценникодержатели</a>
-                                    </li>
-                                    <li class="active sub-category second-level">
-                                        <a href="#">Штуки</a>
-                                    </li>
-                                    <li class="active sub-category second-level">
-                                        <a href="#">Супер ценник</a>
-                                    </li>
-                                </ul><!-- 2 nesting level end -->
-                            </li>
-
-                            <li class="active sub-category">
-                                <a href="#">Ценникодержатели на колбасные изделия</a>
-                            </li>
-                            <li class="active sub-category last-li">
-                                <a href="#">Вставки в ценникодержатели</a>
-                            </li>
-                        </ul> <!-- 1 nesting level end -->
-
-                    </li>
-                    <li class="first-from-active"><a href="#">Толкатели</a></li>
-                    <li><a href="#">Рамы и аксессуары</a></li>
-                    <li><a href="#">Прищепки и держатели ценников</a></li>
-                    <li><a href="#">Подвесные системы</a></li>
-                    <li><a href="#">Шелфтокеры</a></li>
-                    <li><a href="#">Держатели информации</a></li>
-                    <li><a href="#">Стенды, штендеры, рекламные стойки</a></li>
-                    <li><a href="#">Электронные ценники</a></li>
-                </ul>
-            </aside><!--  Sidebar End -->
-
-
-        <!--  Main Part in sidebar page-->
-        <div class="main-part_sidebar-page col-sm-8 col-xs-12">
-
-            <div class="row">
-                <div class="col-xs-12">
-            <h2>Большой пластиковый держатель-лопатка в лед</h2>
-            <p class="product-info">Код продукта:   <span class="code">203122</span>  <span class="tag">PF-A4</span> </p>
-
-            <!-- Product Slider-->
-            <div id="carousel-product" class="carousel carousel-product slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-product" data-slide-to="0" class="active"><img src="img/product-slide1-tmbn.jpg" alt="Большой пластиковый держатель-лопатка в лед"></li>
-                    <li data-target="#carousel-product" data-slide-to="1"><img src="img/product-slide1-tmbn.jpg" alt="Большой пластиковый держатель-лопатка в лед"></li>
-                    <li data-target="#carousel-product" data-slide-to="2"><img src="img/product-slide1-tmbn.jpg" alt="Большой пластиковый держатель-лопатка в лед"></li>
-                </ol>
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="img/product-slide1.jpg" alt="Большой пластиковый держатель-лопатка в лед">
-                    </div>
-                    <div class="item">
-                        <img src="img/product-slide1.jpg" alt="Большой пластиковый держатель-лопатка в лед">
-                    </div>
-                    <div class="item">
-                        <img src="img/product-slide1.jpg" alt="Большой пластиковый держатель-лопатка в лед">
-                    </div>
-                </div><!-- Wrapper for slides -->
+        <div class="row heading">
+            <div class="col-xs-12">
+                <h2 class="with-border-bot">Корзина <span class="cart-total right hidden-xs">Итого: <span class="total">12 300 грн.</span> <span class="checkout text-right"><a href="order-check.html" class="custom-yellow-btn">Оформить заказ</a></span></span></h2>
             </div>
-                </div>
-            </div>
+        </div>
 
 
-            <div class="row form-price w-645">
-                <form action="">
+        <div class="row cart-product">
+            <div class="col-xs-12">
+                <div class="product-data">
+                    <img class="left" src="img/catalog1_200.jpg" alt="Держатель-зажим"/>
+                    <div class="product-description">
+                        <a href="#" class="btn-close hidden-xs"><img src="img/close-icon.png" alt="close"/></a>
+                        <h3>Держатель-зажим</h3>
 
-                    <div class="form-group col-sm-3 col-xs-6">
-                        <label for="color">Цвет</label>
-                        <select id="color" class="choice form-control">
-                            <option>Синий</option>
-                            <option>Красный</option>
-                            <option>Белый</option>
-                        </select>
+                        <span class="price-label visible-xs-block">Итого</span>
+                        <span class="price visible-xs-inline-block">150 грн.</span>
+
+                        <form class="form-inline hidden-xs" action="">
+                            <div class="form-group">
+                                <label for="color">Цвет</label>
+                                <select id="color" class="choice form-control">
+                                    <option>Синий</option>
+                                    <option>Красный</option>
+                                    <option>Белый</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group product-qty">
+                                <label for="quantity">Количество</label>
+                                <div class="number">
+                                    <input id="quantity" class="center-align" type="text" value="0"/>
+                                    <span class="plus">+</span>
+                                    <span class="minus">-</span>
+                                </div>
+                            </div>
+                        </form>
                     </div>
+                    <span class="price hidden-xs">150 грн.</span>
 
-                    <div class="form-group col-sm-2 col-xs-6">
-                        <label for="quantity">Количество</label>
-                        <div class="number">
-                            <input id="quantity" class="center-align" type="text" value="0"/>
-                            <span class="plus">+</span>
-                            <span class="minus">-</span>
+                    <form class="form-inline visible-xs-block" action="">
+                        <div class="form-group">
+                            <label for="color11">Цвет</label>
+                            <select id="color11" class="choice form-control">
+                                <option>Синий</option>
+                                <option>Красный</option>
+                                <option>Белый</option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="clearfix mar-bot visible-xs-block"></div>
 
-                    <div class="price pad-l-25 col-sm-2 col-xs-6">
-                        <p>Цена за шт.</p>
-                        <p class="price">15 грн.</p>
-                    </div>
-
-                    <div class="total pad-l-25 col-sm-5 col-xs-6">
-                        <p>Итого</p>
-                        <p class="total">150 грн.</p>
-                    </div>
-                </form>
-            </div>
-
-            <div class="row notification w-645">
-                <div class="col-sm-5 col-xs-12">
-                    <button class="btn custom-yellow-btn">Уведомить когда появится</button>
-                </div>
-                <div class="expectation col-sm-5 col-xs-12">
-                    <img class="left" src="img/time-icon_21.svg" alt="Товар ожидается с 5 по 25 Марта">
-                    <span>Товар ожидается с 5 по 25 Марта</span>
+                        <div class="form-group product-qty">
+                            <label for="quantity11">Количество</label>
+                            <div class="number">
+                                <input id="quantity11" class="center-align" type="text" value="0"/>
+                                <span class="plus">+</span>
+                                <span class="minus">-</span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
 
-            <div class="row product-description">
-                <div class="col-xs-12">
-                    <h6>Описание</h6>
-                    <p>Крепится на торец полки, корзину толщиной до 25 мм.<br>При креплении на трубу - максимальный Ø трубы - 32 мм.</p>
 
-                       <p> Ширина держателя ценника - 50 мм.<br>Три варианта высоты ножки - 0, 50, 100 мм.<br><span>Количество в упаковке: 10 шт.</span></p>
+        <div class="row cart-product">
+            <div class="col-xs-12">
+                <div class="product-data">
+                    <img class="left" src="img/catalog1_200.jpg" alt="Ужиматель"/>
+                    <div class="product-description">
+                        <a href="#" class="btn-close hidden-xs"><img src="img/close-icon.png" alt="close"/></a>
+                        <h3>Ужиматель</h3>
+
+                        <span class="price-label visible-xs-block">Итого</span>
+                        <span class="price visible-xs-inline-block">150 грн.</span>
+
+                        <form class="form-inline hidden-xs" action="">
+                            <div class="form-group">
+                                <label for="color2">Цвет</label>
+                                <select id="color2" class="choice form-control">
+                                    <option>Синий</option>
+                                    <option>Красный</option>
+                                    <option>Белый</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group product-qty">
+                                <label for="quantity2">Количество</label>
+                                <div class="number">
+                                    <input id="quantity2" class="center-align" type="text" value="0"/>
+                                    <span class="plus">+</span>
+                                    <span class="minus">-</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <span class="price hidden-xs">150 грн.</span>
+
+                    <form class="form-inline visible-xs-block" action="">
+                        <div class="form-group">
+                            <label for="color22">Цвет</label>
+                            <select id="color22" class="choice form-control">
+                                <option>Синий</option>
+                                <option>Красный</option>
+                                <option>Белый</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group product-qty">
+                            <label for="quantity22">Количество</label>
+                            <div class="number">
+                                <input id="quantity22" class="center-align" type="text" value="0"/>
+                                <span class="plus">+</span>
+                                <span class="minus">-</span>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </div>
 
-        </div><!--  Main Part in sidebar page-->
+
+        <div class="row cart-product">
+            <div class="col-xs-12">
+                <div class="product-data">
+                    <img class="left" src="img/catalog3_200.jpg" alt="Продаватель товара"/>
+                    <div class="product-description">
+                        <a href="#" class="btn-close hidden-xs"><img src="img/close-icon.png" alt="close"/></a>
+                        <h3>Продаватель товара</h3>
+
+                        <span class="price-label visible-xs-block">Итого</span>
+                        <span class="price visible-xs-inline-block">150 грн.</span>
+
+                        <form class="form-inline hidden-xs" action="">
+                            <div class="form-group">
+                                <label for="color3">Цвет</label>
+                                <select id="color3" class="choice form-control">
+                                    <option>Синий</option>
+                                    <option>Красный</option>
+                                    <option>Белый</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group product-qty">
+                                <label for="quantity3">Количество</label>
+                                <div class="number">
+                                    <input id="quantity3" class="center-align" type="text" value="0"/>
+                                    <span class="plus">+</span>
+                                    <span class="minus">-</span>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <span class="price hidden-xs">150 грн.</span>
+
+                    <form class="form-inline visible-xs-block" action="">
+                        <div class="form-group">
+                            <label for="color33">Цвет</label>
+                            <select id="color33" class="choice form-control">
+                                <option>Синий</option>
+                                <option>Красный</option>
+                                <option>Белый</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group product-qty">
+                            <label for="quantity33">Количество</label>
+                            <div class="number">
+                                <input id="quantity33" class="center-align" type="text" value="0"/>
+                                <span class="plus">+</span>
+                                <span class="minus">-</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="row checkout-mobile visible-xs-block">
+            <div class="total-cart col-xs-12">
+                Итого: <span class="total">12 300 грн.</span>
+            </div>
+        </div>
+
+
+        <div class="row checkout-mobile visible-xs-block">
+            <div class="col-xs-12">
+                <a href="#" class="custom-yellow-btn">Оформить заказ</a>
+            </div>
         </div>
     </div>
-</section><!-- MAIN CONTENT with sidebar End-->
+</section><!-- CART End -->
 
-<!-- ANALOGS  -->
-<section class="offers">
+
+<!-- CART Proposition  -->
+<section class="cart-proposition">
     <div class="container-fluid white-bg">
+
         <div class="row hidden-xs">
-            <div class="col-sm-3 col-xs-12">
-                <h2 class="with-border-bot">Аналоги</h2>
+            <div class="col-xs-12">
+                <h2 class="with-border-bot grey-border">Вам может это понравиться</h2>
+            </div>
+        </div>
+        <div class="row hidden-xs">
+            <div class="product-proposition col-sm-4 col-xs-12">
+                <a href="catalog-item.html">
+                <img class="left" src="img/catalog3_200.jpg" alt=""/>
+                <p>Продаватель товара</p>
+                <span class="price">342 грн.</span></a>
             </div>
 
-            <div class="col-sm-3 col-xs-6">
-                <a href="catalog-item.html" class="catalog-item">
-                    <img src="img/catalog7_200.jpg" alt="Шелфтокеры"/>
-                    <p class="item-sign text-center one-line-text">Шелфтокеры</p>
-                </a>
+            <div class="product-proposition col-sm-4 col-xs-12">
+                <a href="catalog-item.html">
+                <img class="left" src="img/catalog7_200.jpg" alt=""/>
+                <p>Хорошая вещь</p>
+                <span class="price">342 грн.</span></a>
             </div>
 
-            <div class="col-sm-3 col-xs-6">
-                <a href="catalog-item.html" class="catalog-item">
-                    <img src="img/catalog8_200.jpg" alt="Держатели информации"/>
-                    <p class="item-sign text-center">Держатели<br>информации</p>
-                </a>
+            <div class="product-proposition col-sm-4 col-xs-12">
+                <a href="catalog-item.html">
+                <img class="left" src="img/catalog2_200.jpg" alt=""/>
+                <p>Держатель</p>
+                <span class="price">342 грн.</span></a>
             </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="catalog-item.html" class="catalog-item">
-                    <img src="img/catalog9_200.jpg" alt="Стенды, штендеры, рекламные стойки"/>
-                    <p class="item-sign text-center one-line-text">Стенды, штендеры,<br>рекламные стойки</p>
-                </a>
-            </div>
-
         </div>
 
-        <!--  ANALOGS - mobile  -->
+
+        <!--  CART Proposition mobile -->
 
         <div class="row visible-xs-block">
             <div class="col-xs-12">
-                <h2 class="with-border-bot">Аналоги</h2>
-            </div>
-
-            <div class="col-xs-6">
-                <a href="catalog-item.html" class="catalog-item">
-                    <img src="img/catalog7_200.jpg" alt="Шелфтокеры"/>
-                    <p class="item-sign text-center one-line-text">Шелфтокеры</p>
-                </a>
-            </div>
-
-            <div class="col-xs-6">
-                <a href="catalog-item.html" class="catalog-item">
-                    <img src="img/catalog8_200.jpg" alt="Держатели информации"/>
-                    <p class="item-sign text-center">Держатели<br>информации</p>
-                </a>
+                <h2 class="with-border-bot grey-border">Вам может это понравиться</h2>
             </div>
         </div>
 
-        <div class="row last visible-xs-block">
-            <div class="col-xs-6">
-                <a href="catalog-item.html" class="catalog-item">
-                    <img src="img/catalog9_200.jpg" alt="Стенды, штендеры, рекламные стойки"/>
-                    <p class="item-sign text-center one-line-text">Стенды, штендеры,<br>рекламные стойки</p>
-                </a>
-            </div>
-
-            <div class="col-xs-6">
-                <a href="catalog-item.html" class="catalog-item">
-                    <img src="img/catalog6_200.jpg" alt="Подвесные системы"/>
-                    <p class="item-sign text-center">Подвесные<br>системы</p>
-                </a>
-            </div>
-
-        </div>
-    </div>
-</section><!-- ANALOGS End  -->
-
-
-<!-- Related Products  -->
-<section class="offers last">
-    <div class="container-fluid white-bg">
-        <div class="row hidden-xs">
-            <div class="col-sm-3 col-xs-12">
-                <h2 class="with-border-bot">Сопутствующие товары</h2>
-            </div>
-
-            <div class="col-sm-3 col-xs-6">
+        <div class="row visible-xs-block">
+            <div class="col-xs-6 text-center">
                 <a href="catalog-item.html" class="catalog-item">
                     <img src="img/catalog1_200.jpg" alt="Полочные ценникодержатели"/>
-                    <p class="item-sign text-center one-line-text">Полочные ценникодержатели</p>
+                    <p class="item-sign text-center">Полочные<br>ценникодержатели</p>
                 </a>
             </div>
-
-            <div class="col-sm-3 col-xs-6">
+            <div class="col-xs-6 text-center">
                 <a href="catalog-item.html" class="catalog-item">
                     <img src="img/catalog2_200.jpg" alt="Разделители товаров"/>
                     <p class="item-sign text-center">Разделители<br>товаров</p>
                 </a>
             </div>
-
-            <div class="col-sm-3 col-xs-6">
-                <a href="catalog-item.html" class="catalog-item">
-                    <img src="img/catalog3_200.jpg" alt="Толкатели"/>
-                    <p class="item-sign text-center one-line-text">Толкатели</p>
-                </a>
-            </div>
-
         </div>
-
-        <!--  Related Products - mobile  -->
 
         <div class="row visible-xs-block">
-            <div class="col-xs-12">
-                <h2 class="with-border-bot">Сопутствующие товары</h2>
-            </div>
-
-            <div class="col-xs-6">
+            <div class="col-xs-6 text-center">
                 <a href="catalog-item.html" class="catalog-item">
-                    <img src="img/catalog7_200.jpg" alt="Шелфтокеры"/>
-                    <p class="item-sign text-center one-line-text">Шелфтокеры</p>
+                    <img src="img/catalog3_200.jpg" alt="Полочные ценникодержатели"/>
+                    <p class="item-sign text-center">Полочные<br>ценникодержатели</p>
                 </a>
             </div>
-
-            <div class="col-xs-6">
+            <div class="col-xs-6 text-center">
                 <a href="catalog-item.html" class="catalog-item">
-                    <img src="img/catalog8_200.jpg" alt="Держатели информации"/>
-                    <p class="item-sign text-center">Держатели<br>информации</p>
+                    <img src="img/catalog4_200.jpg" alt="Разделители товаров"/>
+                    <p class="item-sign text-center">Разделители<br>товаров</p>
                 </a>
             </div>
-        </div>
+        </div><!--  CART Proposition mobile -->
 
-        <div class="row last visible-xs-block">
-            <div class="col-xs-6">
-                <a href="catalog-item.html" class="catalog-item">
-                    <img src="img/catalog9_200.jpg" alt="Стенды, штендеры, рекламные стойки"/>
-                    <p class="item-sign text-center one-line-text">Стенды, штендеры,<br>рекламные стойки</p>
-                </a>
-            </div>
-
-            <div class="col-xs-6">
-                <a href="catalog-item.html" class="catalog-item">
-                    <img src="img/catalog6_200.jpg" alt="Подвесные системы"/>
-                    <p class="item-sign text-center">Подвесные<br>системы</p>
-                </a>
-            </div>
-
-        </div>
     </div>
-</section><!-- Related Products End  -->
+</section><!-- CART Proposition End -->
+
+<!-- MAIN CONTENT End-->
+
 </section>
 <!-- FOOTER-->
 <footer class="sticky-footer">
@@ -501,7 +487,7 @@
                 <a href="catalog.html">Каталог</a>
                 <a href="#">Мой кабинет</a>
                 <a href="#">Вход</a>
-                <a href="Регистрация">Регистрация</a>
+                <a href="registration.html">Регистрация</a>
             </div>
 
             <div class="col-sm-2 col-xs-6 footer-nav">

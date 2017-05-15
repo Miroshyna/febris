@@ -25,7 +25,7 @@
 
 <body>
 
-<section class="page-wrap">
+<section class="page-wrap for-catalog">
 <!-- HEADER-->
 <header>
 <section class="sub-header">
@@ -65,7 +65,7 @@
 
     <div class="dropdown no-pad hidden-xs">
         <button class="btn catalog dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            Каталог <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+            Каталог <img class="arr-down" src="img/arr-down-icon.png" alt="Каталог"/>
         </button>
         <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
             <li class="dropdown-header">Каталог <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></li>
@@ -87,7 +87,7 @@
 
         <!-- Catalog-mobile-->
         <button class="btn catalog dropdown-toggle" type="button" data-toggle="modal" data-target="#catalogModal">
-            Каталог <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+            Каталог <img class="arr-down" src="img/arr-down-icon.png" alt="Каталог"/>
         </button>
 
         <!-- modal -->
@@ -121,7 +121,7 @@
     <form class="navbar-form no-pad">
         <div class="form-group has-feedback">
             <input type="text" class="form-control search" placeholder="Поиск">
-            <span class="lnr lnr-magnifier form-control-feedback" aria-hidden="true"></span>
+            <a href="#"><img src="img/search-mobile_19.svg" onerror="this.onerror=null; this.src='search-mobile_19.png' " alt="Поиск"/></a>
         </div>
     </form>
 </div>
@@ -144,14 +144,14 @@
                 <form class="navbar-form">
                     <div class="form-group has-feedback center-block">
                         <input type="text" class="form-control search" placeholder="Поиск">
-                        <span class="lnr lnr-magnifier form-control-feedback" aria-hidden="true"></span>
+                        <img src="img/search-mobile_19.svg" onerror="this.onerror=null; this.src='search-mobile_19.png' " alt="Поиск"/>
                     </div>
                 </form>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal --><!-- /.Search-mobile-->
 
-    <a class="cart" href="#"><span class="lnr lnr-cart"></span> <span class="qty-tag">2</span></a>
+    <a class="cart" href="#"><img src="img/cart-logged_27.svg" onerror="this.onerror=null; this.src='cart-logged_27.png' " alt="Корзина"/> <span class="qty-tag">2</span></a>
 
     <!--  Mobile Menu-->
     <a class="menu visible-xs-inline" href="#"  data-toggle="modal" data-target="#menuModal"><span class="lnr lnr-menu"></span></a>
@@ -191,108 +191,160 @@
 <!-- MAIN CONTENT with sidebar-->
 
 <section class="catalog page">
-    <div class="container-fluid">
+    <div class="container-fluid white-bg">
         <div class="row last">
-        <!--  Sidebar-->
-        <aside class="sidebar col-sm-4 hidden-xs">
-           <ul class="categories-menu">
-               <li><a href="">Полочные ценникодержатели</a></li>
-               <li class="active category">
-                   <a href="">Разделители товаров</a>
-               </li>
-               <li class="active sub-category">
-                   <a href="">Ценникодержатели на шарнирах</a>
-               </li>
-               <li class="active sub-category">
-                   <a href=""> Ценникодержатели с большой прищепкой</a>
-               </li>
-               <li class="active sub-category">
-                   <a href="">Ценникодержатели на колбасные изделия</a>
-               </li>
-               <li class="active sub-category last-li">
-                   <a href="">Вставки в ценникодержатели</a>
-               </li>
-               <li><a href="">Толкатели</a></li>
-               <li><a href="">Рамы и аксессуары</a></li>
-               <li><a href="">Прищепки и держатели ценников</a></li>
-               <li><a href="">Подвесные системы</a></li>
-               <li><a href="">Шелфтокеры</a></li>
-               <li><a href="">Держатели информации</a></li>
-               <li><a href="">Стенды, штендеры, рекламные стойки</a></li>
-               <li><a href="">Электронные ценники</a></li>
-           </ul>
-        </aside><!--  Sidebar End -->
+            <div class="col-xs-12">
+
+            <!--  Sidebar-->
+            <aside class="sidebar left hidden-xs">
+                <ul class="categories-menu">
+                    <li><a href="#">Полочные ценникодержатели</a></li>
+                    <li class="active category">
+                        <a href="#">Разделители товаров</a>
+                        <!-- 1 nesting level -->
+                        <ul class="sub">
+                            <li class="active sub-category">
+                                <a href="#">Ценникодержатели на шарнирах</a>
+                            </li>
+                            <li class="active sub-category">
+                                <a href="#"> Ценникодержатели с большой прищепкой</a>
+
+                                <!-- 2 nesting level -->
+                                <ul class="sub second-level-ul">
+                                    <li class="active sub-category second-level">
+                                        <a href="#">Ценникодержатели</a>
+                                    </li>
+                                    <li class="active sub-category second-level">
+                                        <a href="#">Штуки</a>
+                                    </li>
+                                    <li class="active sub-category second-level">
+                                        <a href="#">Супер ценник</a>
+                                    </li>
+                                </ul><!-- 2 nesting level end -->
+                            </li>
+
+                            <li class="active sub-category">
+                                <a href="#">Ценникодержатели на колбасные изделия</a>
+                            </li>
+                            <li class="active sub-category last-li">
+                                <a href="#">Вставки в ценникодержатели</a>
+                            </li>
+                        </ul> <!-- 1 nesting level end -->
+
+                    </li>
+                    <li class="first-from-active"><a href="#">Толкатели</a></li>
+                    <li><a href="#">Рамы и аксессуары</a></li>
+                    <li><a href="#">Прищепки и держатели ценников</a></li>
+                    <li><a href="#">Подвесные системы</a></li>
+                    <li><a href="#">Шелфтокеры</a></li>
+                    <li><a href="#">Держатели информации</a></li>
+                    <li><a href="#">Стенды, штендеры, рекламные стойки</a></li>
+                    <li><a href="#">Электронные ценники</a></li>
+                </ul>
+            </aside><!--  Sidebar End -->
 
 
         <!--  Main Part in sidebar page-->
-        <div class="main-part_sidebar-page col-sm-8 col-xs-12">
+        <div class="main-part_sidebar-page hidden-xs">
+            <div class="row last">
 
             <!--  Catalog-->
-           <div class="row hidden-xs">
-                <div class="col-xs-12">
-                    <h2 class="with-border-bot">Каталог</h2>
-                </div>
-                <div class="col-sm-4">
-                    <a href="catalog-item.html" class="catalog-item">
-                        <img src="img/catalog1_200.jpg" alt="Полочные ценникодержатели"/>
-                        <p class="item-sign text-center">Полочные<br>ценникодержатели</p>
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="catalog-item.html" class="catalog-item">
-                        <img src="img/catalog2_200.jpg" alt="Разделители товаров"/>
-                        <p class="item-sign text-center">Разделители<br>товаров</p>
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="catalog-item.html" class="catalog-item">
-                        <img src="img/catalog3_200.jpg" alt="Толкатели"/>
-                        <p class="item-sign text-center one-line-text">Толкатели</p>
-                    </a>
-                </div>
+            <div class="col-xs-12 hidden-xs">
+                <h2 class="with-border-bot">Каталог</h2>
             </div>
 
-            <div class="row hidden-xs">
-                <div class="col-sm-4">
-                    <a href="catalog-item.html" class="catalog-item">
-                        <img src="img/catalog4_200.jpg" alt="Рамы и аксессуары"/>
-                        <p class="item-sign text-center one-line-text">Рамы и аксессуары</p>
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="catalog-item.html" class="catalog-item">
-                        <img src="img/catalog5_200.jpg" alt="Прищепки и держатели ценников"/>
-                        <p class="item-sign text-center">Прищепки и держатели<br>ценников</p>
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="catalog-item.html" class="catalog-item">
-                        <img src="img/catalog6_200.jpg" alt="Подвесные системы"/>
-                        <p class="item-sign text-center">Подвесные<br>системы</p>
-                    </a>
-                </div>
+                <!-- 1 -->
+            <div class="catalog-item col-lg-3 col-md-4 col-sm-4 hidden-xs">
+                <a href="catalog-item.html" class="catalog-item">
+                    <img src="img/catalog1_200.jpg" alt="Полочные ценникодержатели"/>
+                    <p class="item-sign text-center">Полочные<br>ценникодержатели</p>
+                </a>
             </div>
 
-            <div class="row hidden-xs">
-                <div class="col-sm-4 ">
-                    <a href="catalog-item.html" class="catalog-item">
-                        <img src="img/catalog7_200.jpg" alt="Шелфтокеры"/>
-                        <p class="item-sign text-center one-line-text">Шелфтокеры</p>
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="catalog-item.html" class="catalog-item">
-                        <img src="img/catalog8_200.jpg" alt="Держатели информации"/>
-                        <p class="item-sign text-center">Держатели<br>информации</p>
-                    </a>
-                </div>
-                <div class="col-sm-4">
-                    <a href="catalog-item.html" class="catalog-item">
-                        <img src="img/catalog9_200.jpg" alt="Толкатели"/>
-                        <p class="item-sign text-center one-line-text">Толкатели</p>
-                    </a>
-                </div>
+                <!-- 2 -->
+            <div class="catalog-item col-lg-3 col-md-4 col-sm-4 text-center  hidden-xs">
+                <a href="catalog-item.html" class="catalog-item">
+                    <img src="img/catalog2_200.jpg" alt="Разделители товаров"/>
+                    <p class="item-sign text-center">Разделители<br>товаров</p>
+                </a>
+            </div>
+
+                <!-- 3 -->
+            <div class="catalog-item col-lg-3 col-md-4 col-sm-4 text-center  hidden-xs">
+                <a href="catalog-item.html" class="catalog-item">
+                    <img src="img/catalog3_200.jpg" alt="Толкатели"/>
+                    <p class="item-sign text-center one-line-text">Толкатели</p>
+                </a>
+            </div>
+
+                <!-- 4 -->
+            <div class="catalog-item col-lg-3 col-md-4 col-sm-4 text-right  hidden-xs">
+                <a href="catalog-item.html" class="catalog-item">
+                    <img src="img/catalog4_200.jpg" alt="Рамы и аксессуары"/>
+                    <p class="item-sign text-center one-line-text">Рамы и аксессуары</p>
+                </a>
+            </div>
+
+                <!-- 5 -->
+            <div class="catalog-item col-lg-3 col-md-4 col-sm-4  hidden-xs">
+                <a href="catalog-item.html" class="catalog-item">
+                    <img src="img/catalog5_200.jpg" alt="Прищепки и держатели ценников"/>
+                    <p class="item-sign text-center">Прищепки и держатели<br>ценников</p>
+                </a>
+            </div>
+
+                <!-- 6 -->
+            <div class="catalog-item col-lg-3 col-md-4 col-sm-4 text-center  hidden-xs">
+                <a href="catalog-item.html" class="catalog-item">
+                    <img src="img/catalog6_200.jpg" alt="Подвесные системы"/>
+                    <p class="item-sign text-center">Подвесные<br>системы</p>
+                </a>
+            </div>
+
+                <!-- 7 -->
+            <div class="catalog-item col-lg-3 col-md-4 col-sm-4 text-center  hidden-xs ">
+                <a href="catalog-item.html" class="catalog-item">
+                    <img src="img/catalog7_200.jpg" alt="Шелфтокеры"/>
+                    <p class="item-sign text-center one-line-text">Шелфтокеры</p>
+                </a>
+            </div>
+
+                <!-- 8 -->
+            <div class="catalog-item  col-lg-3 col-md-4 col-sm-4 text-right  hidden-xs">
+                <a href="catalog-item.html" class="catalog-item">
+                    <img src="img/catalog8_200.jpg" alt="Держатели информации"/>
+                    <p class="item-sign text-center">Держатели<br>информации</p>
+                </a>
+            </div>
+
+                <!-- 9 -->
+            <div class="catalog-item col-lg-3 col-md-4 col-sm-4 hidden-xs">
+                <a href="catalog-item.html" class="catalog-item">
+                    <img src="img/catalog9_200.jpg" alt="Толкатели"/>
+                    <p class="item-sign text-center one-line-text">Толкатели</p>
+                </a>
             </div><!--  Catalog End -->
+
+
+            <!--  Pager -->
+            <div class="row pager last">
+                <nav class="col-xs-12 text-left" aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li class="active-page"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                    </ul>
+                </nav>
+            </div>
+            </div>
+        </div><!--  Pager End --><!--  Main Part in sidebar page-->
+
+
+        <!--  Main Part in sidebar page mobile-->
+        <div class="main-part_sidebar-page visible-xs-block">
+
 
 
             <!--  Catalog mobile -->
@@ -365,6 +417,7 @@
             </div>
         </div><!--  Pager End --><!--  Main Part in sidebar page-->
 
+            </div>
         </div>
     </div>
 </section><!-- MAIN CONTENT with sidebar End-->

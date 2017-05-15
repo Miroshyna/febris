@@ -1,20 +1,25 @@
 html, body {
     font: 10px 'Roboto', sans-serif;
     height: 100%;
+    background-color: #f2f5f7;
 }
 
 .container-fluid {
-    max-width: 1600px;
+    max-width: 1440px;
 }
 
-section,
-footer {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
+.white-bg {
+    background-color: #fff !important;
 }
 
+.container-fluid {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+a:hover,
 a:focus {
     outline: none !important;
+    cursor: pointer !important;
 }
 
 /*  Sticky FOOTER*/
@@ -64,6 +69,10 @@ a:focus {
     padding-left: 0 !important;
 }
 
+.pad-l-25 {
+    padding-left: 25px;
+}
+
 .columns-one-height {
     display: table;
     width: 100%;
@@ -93,7 +102,9 @@ a:focus {
 
 .custom-yellow-btn:hover,
 .custom-yellow-btn:focus {
-    background: #edd609;
+    color: #1a1a1a;
+    background: #fbf77c;
+    text-decoration: none;
 }
 
 /* Modals */
@@ -125,7 +136,7 @@ a:focus {
 
 button.close {
     margin-right: 3px;
-    margin-top: 2px !important;
+    margin-top: 0 !important;
     color: #000 !important;
     opacity: 1;
     z-index: 999;
@@ -148,7 +159,7 @@ button.close img {
 }
 
 form.login-form .row {
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .login-form .checkbox label, .radio label {
@@ -170,7 +181,7 @@ form.login-form .row {
 
 .login-form a.forgot-password {
     color: #656565;
-    font-size: 1.3rem;
+    font-size: 13px;
     font-weight: 400;
     text-decoration: underline;
     display: block;
@@ -193,11 +204,23 @@ body form .number input:focus {
     outline: none;
 }
 
+.form-group {
+    margin-bottom: 17px;
+}
+
 body form select.form-control:focus {
     border: 1px solid #e2e2e2;
     background-color: #fff;
     box-shadow: none;
     outline: none;
+}
+
+body form select {
+    background: #fff !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none!important;
 }
 
 .form-control {
@@ -206,6 +229,7 @@ body form select.form-control:focus {
     color: #2b2b2b;
     border-radius: 6px;
     border: 1px solid #e2e2e2;
+    padding: 6px 20px;
 }
 
 
@@ -228,7 +252,7 @@ body form select.form-control:focus {
 .label {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 .checkbox:checked + .checkbox-custom::before {
@@ -244,7 +268,59 @@ body form select.form-control:focus {
 
 label span.label {
     color: #656565;
-    font-size: 1.3rem;
+    font-size: 13px;
     font-weight: 400;
     padding-left: 5px;
+    padding-top: 2px;
+}
+
+/*  radio custom */
+
+.radio-custom {
+    padding: 11px 0 15px 0;
+}
+
+.radio-custom label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 35px;
+    margin-right: 0;
+    left: -17px;
+    top: 2px;
+    color: #2b2b2b;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.radio-custom label:before {
+    content: "";
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    border-radius: 50%;
+}
+
+.radio-custom label:before {
+    border-radius: 50%;
+}
+
+.radio-custom input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #2b2b2b;
+    font-size: 50px;
+    text-align: center;
+    line-height: 0.55;
+}
+
+.radio-custom input[type=radio],
+.radio-inline input[type=radio] {
+    margin-left: 2px;
+    margin-top: 10px;
 }

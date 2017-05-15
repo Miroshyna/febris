@@ -18,5 +18,7 @@
             $input.change();
             return false;
         });
+
     });
 })(jQuery);
+
